@@ -2,10 +2,10 @@
 
 @theme {
   --color-brand-blue: #0A2342;
-  --color-brand-red: #D32F2F;
-  --color-brand-red-hover: #B71C1C;
+  --color-brand-red: #bc1d2d;
+  --color-brand-red-hover: #86141f;
   --color-brand-blue-hover: #071930;
-  
+
   --font-sans: var(--font-inter);
 }
 
