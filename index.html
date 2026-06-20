@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+
+<html lang="zxx" style="scroll-behavior: smooth;">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Link of CSS Files -->
+<link href="./assets/css/animate.min.css" rel="stylesheet"/>
+<link href="./assets/css/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="./assets/css/scrollCue.min.css" rel="stylesheet"/>
+<link href="./assets/css/style.css" rel="stylesheet"/>
+<title>IHR - HR Community Platform</title>
+<link href="./assets/images/favicon.svg" rel="icon" type="image/png"/>
+<style class="fslightbox-styles">
+        .fslightbox-absoluted {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-fade-in {
+            animation: fslightbox-fade-in .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out {
+            animation: fslightbox-fade-out .3s ease
+        }
+
+        .fslightbox-fade-in-strong {
+            animation: fslightbox-fade-in-strong .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out-strong {
+            animation: fslightbox-fade-out-strong .3s ease
+        }
+
+        @keyframes fslightbox-fade-in {
+            from {
+                opacity: .65
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out {
+            from {
+                opacity: .35
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes fslightbox-fade-in-strong {
+            from {
+                opacity: .3
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out-strong {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .fslightbox-cursor-grabbing {
+            cursor: grabbing
+        }
+
+        .fslightbox-full-dimension {
+            width: 100%;
+            height: 100%
+        }
+
+        .fslightbox-open {
+            overflow: hidden;
+            height: 100%
+        }
+
+        .fslightbox-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fslightbox-opacity-0 {
+            opacity: 0 !important
+        }
+
+        .fslightbox-opacity-1 {
+            opacity: 1 !important
+        }
+
+        .fslightbox-scrollbarfix {
+            padding-right: 17px
+        }
+
+        .fslightbox-transform-transition {
+            transition: transform .3s
+        }
+
+        .fslightbox-container {
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+            touch-action: pinch-zoom;
+            z-index: 1000000000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .fslightbox-container * {
+            box-sizing: border-box
+        }
+
+        .fslightbox-svg-path {
+            transition: fill .15s ease;
+            fill: #ddd
+        }
+
+        .fslightbox-nav {
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-slide-number-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            color: #d7d7d7;
+            z-index: 0;
+            max-width: 55px;
+            text-align: left
+        }
+
+        .fslightbox-slide-number-container .fslightbox-flex-centered {
+            height: 100%
+        }
+
+        .fslightbox-slash {
+            display: block;
+            margin: 0 5px;
+            width: 1px;
+            height: 12px;
+            transform: rotate(15deg);
+            background: #fff
+        }
+
+        .fslightbox-toolbar {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        .fslightbox-toolbar-button {
+            height: 100%;
+            width: 45px;
+            cursor: pointer
+        }
+
+        .fslightbox-toolbar-button:hover .fslightbox-svg-path {
+            fill: #fff
+        }
+
+        .fslightbox-slide-btn-container {
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 6px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+            transform: translateY(-50%)
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container {
+                padding: 22px 22px 22px 6px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container {
+                padding: 30px 30px 30px 6px
+            }
+        }
+
+        .fslightbox-slide-btn-container:hover .fslightbox-svg-path {
+            fill: #f1f1f1
+        }
+
+        .fslightbox-slide-btn {
+            padding: 9px;
+            font-size: 26px;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn {
+                padding: 10px
+            }
+        }
+
+        @media (min-width:1600px) {
+            .fslightbox-slide-btn {
+                padding: 11px
+            }
+        }
+
+        .fslightbox-slide-btn-container-previous {
+            left: 0
+        }
+
+        @media (max-width:475.99px) {
+            .fslightbox-slide-btn-container-previous {
+                padding-left: 3px
+            }
+        }
+
+        .fslightbox-slide-btn-container-next {
+            right: 0;
+            padding-left: 12px;
+            padding-right: 3px
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 22px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 30px
+            }
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-right: 6px
+            }
+        }
+
+        .fslightbox-down-event-detector {
+            position: absolute;
+            z-index: 1
+        }
+
+        .fslightbox-slide-swiping-hoverer {
+            z-index: 4
+        }
+
+        .fslightbox-invalid-file-wrapper {
+            font-size: 22px;
+            color: #eaebeb;
+            margin: auto
+        }
+
+        .fslightbox-video {
+            object-fit: cover
+        }
+
+        .fslightbox-youtube-iframe {
+            border: 0
+        }
+
+        .fslightboxl {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67px;
+            height: 67px
+        }
+
+        .fslightboxl div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            margin: 6px;
+            border: 5px solid;
+            border-color: #999 transparent transparent transparent;
+            border-radius: 50%;
+            animation: fslightboxl 1.2s cubic-bezier(.5, 0, .5, 1) infinite
+        }
+
+        .fslightboxl div:nth-child(1) {
+            animation-delay: -.45s
+        }
+
+        .fslightboxl div:nth-child(2) {
+            animation-delay: -.3s
+        }
+
+        .fslightboxl div:nth-child(3) {
+            animation-delay: -.15s
+        }
+
+        @keyframes fslightboxl {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fslightbox-source {
+            position: relative;
+            z-index: 2;
+            opacity: 0
+        }
+    </style>
+</head>
+<body style="">
+<!-- Start Preloader Area -->
+<div class="preloader-area text-center position-fixed top-0 bottom-0 start-0 end-0" id="preloader" style="display: none;">
+<div class="loader position-absolute start-0 end-0">
+<img alt="favicon" src="./assets/images/favicon.svg"/>
+<div class="waviy position-relative">
+<span class="d-inline-block">T</span>
+<span class="d-inline-block">I</span>
+<span class="d-inline-block">M</span>
+<span class="d-inline-block">I</span>
+<span class="d-inline-block">D</span>
+<span class="d-inline-block">O</span>
+</div>
+</div>
+</div>
+<!-- End Preloader Area -->
+<!-- Start Navbar Area -->
+<nav class="navbar navbar-expand-xl navbar-style-two navbar-style-three navbar-style-four" id="navbar">
+<div class="container-fluid">
+<div class="wrap-inner">
+<a class="navbar-brand" href="./index.html">
+<img alt="logo" src="./assets/images/black-logo.png" style="max-height: 100px; object-fit: contain;"/>
+</a>
+<button class="navbar-toggler" data-bs-target="#sidebarOffcanvas" data-bs-toggle="offcanvas">
+<span class="burger-menu">
+<span class="top-bar"></span>
+<span class="middle-bar"></span>
+<span class="bottom-bar"></span>
+</span>
+</button>
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/about-us.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/hiring-support.html">Hiring Support</a></li>
+<li class="nav-item">
+<a class="dropdown-toggle nav-link" href="javascript:void(0)">
+                                Explore
+                                <i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item"><a class="nav-link" href="./pages/trainings.html">Trainings &amp; Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/events.html">Events</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/sports.html">HR Sports</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="dropdown-toggle nav-link" href="javascript:void(0)">
+                                Insights
+                                <i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item"><a class="nav-link" href="./pages/analytics.html">HR Trends</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/featured-hr.html">Featured HRs</a></li>
+<li class="nav-item"><a class="nav-link" href="./pages/community.html">Community</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+</ul>
+<div class="others-option d-flex align-items-center">
+<div class="option-item">
+<div class="info">
+<span>Call Us Now</span>
+<a href="tel:+919876543210">+91 98765 43210</a>
+</div>
+</div>
+<div class="option-item">
+<div class="search-toggler">
+<i class="ri-search-line"></i>
+</div>
+</div>
+<div class="option-item">
+<a class="default-btn" href="./pages/book-an-appointment.html">Hire Talent</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- End Navbar Area -->
+<!-- Start Responsive Sidebar Menu Area -->
+<div class="sidebar-menu-area offcanvas offcanvas-end" id="sidebarOffcanvas" tabindex="-1">
+<div class="offcanvas-header">
+<a href="./index.html">
+<img alt="logo" src="./assets/images/logo.jpeg" style="max-height: 100px; object-fit: contain;"/>
+</a>
+<button aria-label="Close" class="close-btn" data-bs-dismiss="offcanvas" type="button">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="accordion" id="sidebarAccordion">
+<div class="accordion-item"><a class="accordion-button without-icon" href="#home">Home</a></div>
+<div class="accordion-item"><a class="accordion-button without-icon" href="#about">About</a></div>
+<div class="accordion-item"><a class="accordion-button without-icon" href="#hiring">Hiring Support</a>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapseExplore" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseExplore" data-bs-toggle="collapse" type="button">
+                        Explore
+                    </button>
+<div class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion" id="collapseExplore">
+<div class="accordion-body">
+<div class="accordion" id="sidebarAccordionExplore">
+<div class="accordion-item"><a class="accordion-link" href="#trainings">Trainings</a>
+</div>
+<div class="accordion-item"><a class="accordion-link" href="#certifications">Certifications</a></div>
+<div class="accordion-item"><a class="accordion-link" href="#events">Events</a></div>
+<div class="accordion-item"><a class="accordion-link" href="#sports">HR Sports</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapseInsights" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseInsights" data-bs-toggle="collapse" type="button">
+                        Insights
+                    </button>
+<div class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion" id="collapseInsights">
+<div class="accordion-body">
+<div class="accordion" id="sidebarAccordionInsights">
+<div class="accordion-item"><a class="accordion-link" href="#trends">HR Trends</a></div>
+<div class="accordion-item"><a class="accordion-link" href="#featured">Featured HRs</a>
+</div>
+<div class="accordion-item"><a class="accordion-link" href="#community">Community
+                                        Stats</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item"><a class="accordion-button without-icon" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="others-option">
+<div class="option-item">
+<div class="info">
+<span>Call Us Now</span>
+<a href="tel:+919876543210">+91 98765 43210</a>
+</div>
+</div>
+<div class="option-item">
+<form class="search-form">
+<input class="form-control" placeholder="Search" type="text"/>
+<button type="submit">
+<i class="ri-search-line"></i>
+</button>
+</form>
+</div>
+<div class="option-item">
+<a class="default-btn" href="./pages/book-an-appointment.html">Hire Talent</a>
+</div>
+</div>
+</div>
+</div>
+<!-- End Responsive Sidebar Menu Area -->
+<!-- Start Search Popup -->
+<div class="search-popup">
+<div class="search-popup-overlay search-toggler"></div>
+<div class="search-popup-content">
+<form class="search-popup-form">
+<input class="form-control" placeholder="Search here" type="text"/>
+<button type="submit"><i class="ri-search-line"></i></button>
+</form>
+</div>
+</div>
+<!-- End Search Popup -->
+<!-- Start Outsourcing Banner Area -->
+<div class="outsourcing-banner-area" id="home" style="background-image: url('./assets/images/banner.png'); background-repeat: no-repeat;  background-size: cover; background-position: center 0px;">
+<div class="container-fluid">
+<div class="outsourcing-banner-top-content">
+<p>India’s HR networking and hiring ecosystem. Connect, learn, and grow with professionals.</p>
+</div>
+<div class="outsourcing-banner-content section-title-animation animation-style1">
+<div class="row justify-content-center align-items-center g-4" data-disabled="true">
+<div class="col-lg-9 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<span class="sub">Trusted By 500+ Companies</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">I</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">d</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">'</div>
+<div style="position: relative; display: inline-block;">s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">L</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">g</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">s</div>
+<div style="position: relative; display: inline-block;">t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">C</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">m</div>
+<div style="position: relative; display: inline-block;">m</div>
+<div style="position: relative; display: inline-block;">u</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">y</div>
+</div>
+</div>
+</h2>
+<a class="default-btn" href="./pages/book-an-appointment.html">Get Free Consultation</a>
+</div>
+<div class="col-lg-3 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="info-items">
+<div class="item">
+<h3>HR Networking</h3>
+</div>
+<div class="item">
+<h4>Lateral Hiring</h4>
+<p>Generate hiring leads &amp; recruitment partnerships</p>
+</div>
+<div class="item">
+<h4>Trainings &amp; Certifications</h4>
+<p>Enhance your HR skills with experts</p>
+</div>
+<div class="item">
+<h4>Events &amp; Meetups</h4>
+<p>Join local and national HR networking events</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Banner Area -->
+<!-- Start Outsourcing About Area -->
+<div class="outsourcing-about-area ptb-120" id="about">
+<div class="container">
+<div class="row justify-content-center align-items-center g-4" data-disabled="true">
+<div class="col-xl-5 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-about-content section-title-animation animation-style2">
+<span class="sub">About IHR</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">A</div>
+<div style="position: relative; display: inline-block;">b</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">u</div>
+<div style="position: relative; display: inline-block;">t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">I</div>
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">E</div>
+<div style="position: relative; display: inline-block;">c</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">s</div>
+<div style="position: relative; display: inline-block;">y</div>
+<div style="position: relative; display: inline-block;">s</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">m</div>
+</div>
+</div>
+</h2>
+<p>IHR was born from a vision to transform complex HR processes into streamlined, people-centric
+                            solutions that empower businesses to thrive.</p>
+<div class="image">
+<img alt="image" src="./assets/images/about7.jpg"/>
+</div>
+</div>
+</div>
+<div class="col-xl-7 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-about-inner-content">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-6">
+<div class="left">
+<h3>Our Mission</h3>
+<p>To simplify HR through innovation and expertise, empowering businesses to focus
+                                        on growth while we help their people thrive.</p>
+<img alt="image" src="./assets/images/about8.jpg"/>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="right">
+<img alt="image" src="./assets/images/about9.jpg"/>
+<h3>Our Vision</h3>
+<p>A world where every business can access strategic HR solutions that inspire
+                                        growth and employee fulfillment.</p>
+</div>
+</div>
+</div>
+<div class="circle-wrap">
+<a href="./pages/about-us.html">
+<img alt="image" src="./assets/images/circle.png"/>
+<div class="icon">
+<img alt="image" src="./assets/images/icon.png"/>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing About Area -->
+<!-- Start Outsourcing Values Area -->
+<div class="outsourcing-values-area pb-120">
+<div class="container">
+<div class="section-title text-center section-title-animation animation-style2">
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: center; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                O</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                r</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                C</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                o</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                r</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                e</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                V</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                a</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                e</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                s</div>
+</div>
+</div>
+</h2>
+</div>
+<div class="row justify-content-center g-4" data-disabled="true">
+<div class="col-lg-3 col-sm-6" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-values-card">
+<div class="icon">
+<i class="ri-lightbulb-line"></i>
+</div>
+<h3>Innovation</h3>
+<p>We innovate constantly to lead in HR and tech advancements.</p>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-values-card">
+<div class="icon">
+<i class="ri-heart-3-line"></i>
+</div>
+<h3>Empathy</h3>
+<p>We understand that HR is about people, not just processes.</p>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-values-card">
+<div class="icon">
+<i class="ri-shield-check-line"></i>
+</div>
+<h3>Integrity</h3>
+<p>We lead with transparency and a strong ethical foundation.</p>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-values-card">
+<div class="icon">
+<i class="ri-group-line"></i>
+</div>
+<h3>Partnership</h3>
+<p>We view our clients as partners and their success as our own.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Values Area -->
+<!-- Start Outsourcing Services Area -->
+<div class="outsourcing-services-area ptb-120" id="hiring">
+<div class="container">
+<div class="section-title section-title-animation animation-style2">
+<div class="row justify-content-center g-4" data-disabled="true">
+<div class="col-lg-3 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<span class="sub">Our Ecosystem</span>
+</div>
+<div class="col-lg-9 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: center; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">N</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">w</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">k</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">g</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">&amp;</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">L</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">l</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">g</div>
+</div>
+</div>
+</h2>
+</div>
+</div>
+</div>
+<div class="outsourcing-services-items" data-disabled="true">
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-12">
+<div class="services-content">
+<div class="number">01</div>
+<h3>
+<a href="./pages/service-details.html">HR Networking Hub</a>
+</h3>
+<p>State-wise HR communities, networking channels, and discussion forums.</p>
+<ul class="list">
+<li>
+<i class="ri-check-line"></i>
+<span>Multi-state tax compliance</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Direct deposit &amp; pay cards</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Year-end reporting (W-2, 1099)</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Garnishment management</span>
+</li>
+</ul>
+<div class="service-btn">
+<a class="default-btn" href="./pages/service-details.html">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="services-image h-100">
+<a href="./pages/service-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/service8.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-12">
+<div class="services-content">
+<div class="number">02</div>
+<h3>
+<a href="./pages/service-details.html">Lateral Hiring Support</a>
+</h3>
+<p>Recruitment partnerships, bulk hiring, and candidate sharing.</p>
+<ul class="list">
+<li>
+<i class="ri-check-line"></i>
+<span>Health, dental &amp; vision plans</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>401(k) and retirement planning</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Open enrollment support</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>COBRA administration</span>
+</li>
+</ul>
+<div class="service-btn">
+<a class="default-btn" href="./pages/service-details.html">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="services-image h-100">
+<a href="./pages/service-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/service9.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-12">
+<div class="services-content">
+<div class="number">03</div>
+<h3>
+<a href="./pages/service-details.html">Trainings &amp; Certifications</a>
+</h3>
+<p>Courses on TA, HR Analytics, Payroll, and Labor Laws.</p>
+<ul class="list">
+<li>
+<i class="ri-check-line"></i>
+<span>Job description development</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Candidate screening &amp; interviewing</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Background checks &amp; verifications</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Onboarding &amp; orientation</span>
+</li>
+</ul>
+<div class="service-btn">
+<a class="default-btn" href="./pages/service-details.html">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="services-image h-100">
+<a href="./pages/service-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/service10.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-12">
+<div class="services-content">
+<div class="number">04</div>
+<h3>
+<a href="./pages/service-details.html">HR Sports &amp; Engagement</a>
+</h3>
+<p>Cricket tournaments, corporate sports, and meetups.</p>
+<ul class="list">
+<li>
+<i class="ri-check-line"></i>
+<span>HR policy development</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Compliance audits &amp; reporting</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>EEOC, ADA, FMLA compliance</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Workplace safety (OSHA)</span>
+</li>
+</ul>
+<div class="service-btn">
+<a class="default-btn" href="./pages/service-details.html">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="services-image h-100">
+<a href="./pages/service-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/service11.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-12">
+<div class="services-content">
+<div class="number">05</div>
+<h3>
+<a href="./pages/service-details.html">HR Trends &amp; Analytics</a>
+</h3>
+<p>Hiring trends, salary reports, and AI recruitment updates.</p>
+<ul class="list">
+<li>
+<i class="ri-check-line"></i>
+<span>Goal setting &amp; tracking</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>360-degree feedback</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Performance reviews</span>
+</li>
+<li>
+<i class="ri-check-line"></i>
+<span>Development planning</span>
+</li>
+</ul>
+<div class="service-btn">
+<a class="default-btn" href="./pages/service-details.html">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="services-image h-100">
+<a href="./pages/service-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/service12.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Services Area -->
+<!-- Start Outsourcing Choose Area -->
+<div class="outsourcing-choose-area ptb-120">
+<div class="container">
+<div class="row justify-content-center align-items-center g-4" data-disabled="true">
+<div class="col-xl-5 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-choose-content section-title-animation animation-style3">
+<span class="sub">Why Choose IHR?</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        T</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        m</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        d</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        E</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        x</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        T</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        E</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        m</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        p</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        w</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        e</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        T</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        h</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        g</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        h</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        H</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        O</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        c</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        n</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        g</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        ,</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        N</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        J</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        S</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        e</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        v</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        e</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        .</div>
+</div>
+</div>
+</h2>
+<img alt="image" src="./assets/images/choose3.jpg"/>
+</div>
+</div>
+<div class="col-xl-7 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-faq-accordion">
+<div class="content">
+<p>We go beyond traditional HR outsourcing — delivering tailored, transparent, and
+                                people-centered solutions that empower your business to grow.</p>
+</div>
+<div class="accordion" id="faqAccordion">
+<div class="accordion-item">
+<button aria-controls="collapse_1" aria-expanded="true" class="accordion-button" data-bs-target="#collapse_1" data-bs-toggle="collapse" type="button">
+                                    Dedicated HR Consultants
+                                </button>
+<div class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="collapse_1">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapse_2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse_2" data-bs-toggle="collapse" type="button">
+                                    Rapid Implementation
+                                </button>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapse_2">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapse_3" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse_3" data-bs-toggle="collapse" type="button">
+                                    AI-Powered Technology
+                                </button>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapse_3">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapse_4" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse_4" data-bs-toggle="collapse" type="button">
+                                    Proven ROI
+                                </button>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapse_4">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapse_5" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse_5" data-bs-toggle="collapse" type="button">
+                                    Proactive Compliance
+                                </button>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapse_5">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapse_6" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapse_6" data-bs-toggle="collapse" type="button">
+                                    Scalable Solutions
+                                </button>
+<div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapse_6">
+<div class="accordion-body">
+<p>Unlike other providers who offer generic support, each IHR client gets a
+                                            dedicated HR consultant who truly understands your business and becomes an
+                                            extension of your team.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Choose Area -->
+<!-- Start Outsourcing Fun Area -->
+<div class="outsourcing-fun-area pb-120">
+<div class="container">
+<div class="row justify-content-center g-4">
+<div class="col-lg-3 col-sm-6">
+<div class="outsourcing-fun-card">
+<div class="d-flex align-items-center justify-content-center">
+<h3 class="counter">50</h3>
+<h3 class="plus">k+</h3>
+</div>
+<span>HR Professionals</span>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="outsourcing-fun-card">
+<div class="d-flex align-items-center justify-content-center">
+<h3 class="counter">1000</h3>
+<h3 class="plus">+</h3>
+</div>
+<span>Companies Connected</span>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="outsourcing-fun-card">
+<div class="d-flex align-items-center justify-content-center">
+<h3 class="counter">500</h3>
+<h3 class="plus">+</h3>
+</div>
+<span>Lateral Hires</span>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="outsourcing-fun-card">
+<div class="d-flex align-items-center justify-content-center">
+<h3 class="counter">100</h3>
+<h3 class="plus">+</h3>
+</div>
+<span>Events Organized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Fun Area -->
+<!-- Start Outsourcing Work Area -->
+<div class="outsourcing-work-area ptb-120">
+<div class="container">
+<div class="section-title text-center section-title-animation animation-style2">
+<span class="sub wrap2">How IHR Works</span>
+
+<div class="text-start" style="max-width: 800px; margin: 0 auto;">
+<h2 class="mb-4" style="color: #E63946;">Project Overview</h2>
+<h4 class="mt-4">Platform Name</h4>
+<p>IHR – Indian Human Resource Community</p>
+<h4 class="mt-4">Vision</h4>
+<p>To build India's leading HR networking and hiring community platform that connects HR professionals, recruiters, companies, trainers, and industry leaders under one ecosystem.</p>
+<h4 class="mt-4">Core Focus Areas</h4>
+<p>The platform should primarily focus on:</p>
+<div class="row">
+<div class="col-md-6">
+<ul class="list-group list-group-flush bg-transparent">
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Networking</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>Lateral Hiring Support</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Community Building</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Events &amp; Engagement</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="list-group list-group-flush bg-transparent">
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Trainings &amp; Certifications</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Trend Analysis</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Personal Branding</li>
+<li class="list-group-item bg-transparent border-0"><i class="ri-check-line text-danger me-2"></i>HR Sports &amp; Community Activities</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<div class="row justify-content-center g-0" data-disabled="true">
+<div class="col-xl-3 col-md-6" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-work-card">
+<div class="inner">
+<h1>01</h1>
+<div class="icon">
+<i class="ri-search-eye-line"></i>
+</div>
+<h3>Needs Assessment</h3>
+<p>A deep review of your HR processes to identify growth opportunities.</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-work-card wrap2">
+<div class="inner">
+<h1>02</h1>
+<div class="icon">
+<i class="ri-file-text-line"></i>
+</div>
+<h3>Custom Proposal</h3>
+<p>We design customized HR solutions aligned with your goals.</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 360ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-work-card wrap3">
+<div class="inner">
+<h1>03</h1>
+<div class="icon">
+<i class="ri-team-line"></i>
+</div>
+<h3>Seamless Setup</h3>
+<p>Our team oversees implementation smoothly and efficiently.</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 540ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-work-card wrap4">
+<div class="inner">
+<h1>04</h1>
+<div class="icon">
+<i class="ri-user-heart-line"></i>
+</div>
+<h3>Ongoing Partnership</h3>
+<p>A dedicated consultant helping your business grow and adapt.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Work Area -->
+<!-- Start Outsourcing Case Studies Area -->
+<div class="outsourcing-case-studies-area ptb-120" id="featured">
+<div class="container">
+<div class="section-title text-start section-title-animation animation-style2">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-9 col-md-12">
+<span class="sub wrap2">Featured HR Professionals</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: left; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">P</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">m</div>
+<div style="position: relative; display: inline-block;">o</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">g</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">L</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">d</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">s</div>
+</div>
+</div>
+</h2>
+</div>
+<div class="col-lg-3 col-md-12">
+<div class="section-btn">
+<a class="default-btn" href="./pages/case-studies.html">View Case Studies</a>
+</div>
+</div>
+</div>
+</div>
+<div class="outsourcing-case-studies-items" data-disabled="true">
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-10 col-md-12">
+<div class="left">
+<div class="image h-100">
+<a href="./pages/case-study-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/case-studies1.jpg"/>
+</a>
+</div>
+<div class="content">
+<h3>
+<a href="./pages/case-study-details.html">Scaling a Growing Tech Startup</a>
+</h3>
+<ul class="list">
+<li><span>Industry:</span> Technology (SaaS) • 250 Employees</li>
+<li><span>Challenge:</span> The company was rapidly expanding but lacked the HR
+                                            capacity to handle recruitment, payroll, and employee onboarding
+                                            efficiently.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-12">
+<a class="arrow-btn" href="./pages/case-study-details.html">
+<i class="ri-arrow-right-long-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-10 col-md-12">
+<div class="left">
+<div class="content wrap2">
+<h3>
+<a href="./pages/case-study-details.html">Transforming HR for a Manufacturing
+                                            Firm</a>
+</h3>
+<ul class="list">
+<li><span>Industry:</span> Manufacturing • 400 Employees</li>
+<li><span>Challenge:</span> Outdated manual HR processes led to delays in
+                                            payroll, performance reviews, and employee engagement.</li>
+</ul>
+</div>
+<div class="image h-100">
+<a href="./pages/case-study-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/case-studies2.jpg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-12">
+<a class="arrow-btn" href="./pages/case-study-details.html">
+<i class="ri-arrow-right-long-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-10 col-md-12">
+<div class="left">
+<div class="image h-100">
+<a href="./pages/case-study-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/case-studies3.jpg"/>
+</a>
+</div>
+<div class="content">
+<h3>
+<a href="./pages/case-study-details.html">Building HR Infrastructure for Global
+                                            Expansion</a>
+</h3>
+<ul class="list">
+<li><span>Industry:</span> Retail • 650 Employees</li>
+<li><span>Challenge:</span> A retail company expanding into new international
+                                            markets needed to establish HR operations quickly and compliantly.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-12">
+<a class="arrow-btn" href="./pages/case-study-details.html">
+<i class="ri-arrow-right-long-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-10 col-md-12">
+<div class="left">
+<div class="content wrap2">
+<h3>
+<a href="./pages/case-study-details.html">Reducing Turnover for a Healthcare
+                                            Provider</a>
+</h3>
+<ul class="list">
+<li><span>Industry:</span> Healthcare • 900 Employees</li>
+<li><span>Challenge:</span> High employee turnover and low engagement rates were
+                                            affecting service quality and operational stability.</li>
+</ul>
+</div>
+<div class="image h-100">
+<a href="./pages/case-study-details.html">
+<img alt="image" class="object-fit-cover h-100" src="./assets/images/case-studies4.jpg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-12">
+<a class="arrow-btn" href="./pages/case-study-details.html">
+<i class="ri-arrow-right-long-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="outsourcing-case-studies-shape">
+<img alt="image" src="./assets/images/frame.png"/>
+</div>
+</div>
+<!-- End Outsourcing Case Studies Area -->
+<!-- Start Outsourcing Testimonials Area -->
+<div class="outsourcing-testimonials-area ptb-120">
+<div class="container">
+<div class="row justify-content-center g-4" data-disabled="true">
+<div class="col-lg-6 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-testimonials-content section-title-animation animation-style3">
+<span class="sub">Testimonials</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        W</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        h</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        a</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        O</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        C</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        l</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        e</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        n</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        S</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        a</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        y</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        A</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        b</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        T</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        m</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        d</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        O</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        t</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        s</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        o</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        u</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        r</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        c</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        i</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        n</div>
+<div style="position: relative; display: inline-block; opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        g</div>
+</div>
+</div>
+</h2>
+<p>Hear directly from the businesses that have transformed their HR operations and achieved
+                            remarkable results with IHR.</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-testimonials-items">
+<div class="item">
+<div class="top">
+<div class="info">
+<div class="image">
+<img alt="image" class="rounded-circle" src="./assets/images/user1.png"/>
+</div>
+<div class="title">
+<h3>Fredrick Hensley</h3>
+<span>CEO, TechNova Solutions</span>
+</div>
+</div>
+<div class="quote">
+<img alt="quote" src="./assets/images/quote.svg"/>
+</div>
+</div>
+<div class="bottom">
+<ul class="list">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p>“IHR completely transformed our HR operations. We went from spending 60% of our time
+                                    on administrative tasks to focusing on strategic initiatives. The dedicated
+                                    consultant model makes all the difference.”</p>
+</div>
+</div>
+<div class="item">
+<div class="top">
+<div class="info">
+<div class="image">
+<img alt="image" class="rounded-circle" src="./assets/images/user2.png"/>
+</div>
+<div class="title">
+<h3>Michelle Ryan</h3>
+<span>HR Director, MediCare Plus</span>
+</div>
+</div>
+<div class="quote">
+<img alt="quote" src="./assets/images/quote.svg"/>
+</div>
+</div>
+<div class="bottom">
+<ul class="list">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p>“The compliance management alone has saved us from potential legal issues multiple
+                                    times. IHR's proactive approach to regulation changes gives us peace of mind we
+                                    never had with our previous provider.”</p>
+</div>
+</div>
+<div class="item">
+<div class="top">
+<div class="info">
+<div class="image">
+<img alt="image" class="rounded-circle" src="./assets/images/user3.png"/>
+</div>
+<div class="title">
+<h3>Dennis Spahn</h3>
+<span>Operations VP, Precision Manufacturing</span>
+</div>
+</div>
+<div class="quote">
+<img alt="quote" src="./assets/images/quote.svg"/>
+</div>
+</div>
+<div class="bottom">
+<ul class="list">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p>“Implementing IHR was seamless and the results were immediate. We cut our HR costs by
+                                    40% while improving employee satisfaction. The analytics dashboard provides insights
+                                    we never had before.”</p>
+</div>
+</div>
+<div class="item">
+<div class="top">
+<div class="info">
+<div class="image">
+<img alt="image" class="rounded-circle" src="./assets/images/user4.png"/>
+</div>
+<div class="title">
+<h3>Leora Bradley</h3>
+<span>CTO, Innovate Labs</span>
+</div>
+</div>
+<div class="quote">
+<img alt="quote" src="./assets/images/quote.svg"/>
+</div>
+</div>
+<div class="bottom">
+<ul class="list">
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+<li><i class="ri-star-fill"></i></li>
+</ul>
+<p>“The compliance management alone has saved us from potential legal issues multiple
+                                    times. IHR's proactive approach to regulation changes gives us peace of mind we
+                                    never had with our previous provider.”</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Testimonials Area -->
+<!-- Start Outsourcing Partner Area -->
+<div class="outsourcing-partner-area pb-120">
+<div class="container">
+<div class="section-title text-center section-title-animation animation-style2">
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: center; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                O</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                r</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                V</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                a</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                a</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                b</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                e</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                C</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                i</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                e</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                n</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                t</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                s</div>
+</div>
+</div>
+</h2>
+</div>
+<div class="swiper outsourcing-partner-slider swiper-initialized swiper-horizontal">
+<div aria-live="off" class="swiper-wrapper" id="swiper-wrapper-4d6959141ebb7fca" style="transition-duration: 0ms; transform: translate3d(-1321px, 0px, 0px); transition-delay: 0ms;">
+<div aria-label="12 / 12" class="swiper-slide" data-swiper-slide-index="11" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner6.png"/>
+</div>
+</div>
+<div aria-label="1 / 12" class="swiper-slide" data-swiper-slide-index="0" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner1.png"/>
+</div>
+</div>
+<div aria-label="2 / 12" class="swiper-slide" data-swiper-slide-index="1" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner2.png"/>
+</div>
+</div>
+<div aria-label="3 / 12" class="swiper-slide" data-swiper-slide-index="2" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner3.png"/>
+</div>
+</div>
+<div aria-label="4 / 12" class="swiper-slide" data-swiper-slide-index="3" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner4.png"/>
+</div>
+</div>
+<div aria-label="5 / 12" class="swiper-slide swiper-slide-prev" data-swiper-slide-index="4" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner5.png"/>
+</div>
+</div>
+<div aria-label="6 / 12" class="swiper-slide swiper-slide-active" data-swiper-slide-index="5" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner6.png"/>
+</div>
+</div>
+<div aria-label="7 / 12" class="swiper-slide swiper-slide-next" data-swiper-slide-index="6" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner1.png"/>
+</div>
+</div>
+<div aria-label="8 / 12" class="swiper-slide" data-swiper-slide-index="7" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner2.png"/>
+</div>
+</div>
+<div aria-label="9 / 12" class="swiper-slide" data-swiper-slide-index="8" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner3.png"/>
+</div>
+</div>
+<div aria-label="10 / 12" class="swiper-slide" data-swiper-slide-index="9" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner4.png"/>
+</div>
+</div>
+<div aria-label="11 / 12" class="swiper-slide" data-swiper-slide-index="10" role="group" style="width: 195.167px; margin-right: 25px;">
+<div class="outsourcing-partner-item">
+<img alt="image" src="./assets/images/partner5.png"/>
+</div>
+</div>
+</div>
+<span aria-atomic="true" aria-live="assertive" class="swiper-notification"></span>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Partner Area -->
+<!-- Start Outsourcing Pricing Area -->
+<!-- End Outsourcing Pricing Area -->
+<!-- Start Outsourcing Solutions Area -->
+<div class="outsourcing-solutions-area ptb-120">
+<div class="container">
+<div class="row justify-content-center align-items-center g-4" data-disabled="true">
+<div class="col-lg-4 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-solutions-content section-title-animation animation-style2">
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        H</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        S</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        o</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        t</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        i</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        o</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        n</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        F</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        o</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        r</div>
+</div>
+</div>
+<div class="split-line" style="display: block; text-align: start; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        E</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        v</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        e</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        r</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        y</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        I</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        n</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        d</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        u</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        s</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        t</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        r</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        y</div>
+</div>
+</div>
+</h2>
+<img alt="image" src="./assets/images/solutions.jpg"/>
+</div>
+</div>
+<div class="col-lg-8 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-briefcase-line"></i>
+<h3>Technology &amp; IT Services</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-hospital-line"></i>
+<h3>Healthcare Services</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-settings-4-line"></i>
+<h3>Manufacturing</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-store-2-line"></i>
+<h3>Retail &amp; E-commerce</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-bar-chart-box-line"></i>
+<h3>Finance &amp; Banking</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-book-read-line"></i>
+<h3>Education &amp; Training</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-flight-takeoff-line"></i>
+<h3>Hospitality &amp; Tourism</h3>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="outsourcing-solutions-card">
+<i class="ri-shield-user-line"></i>
+<h3>Nonprofit &amp; NGOs</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Solutions Area -->
+<!-- Start Outsourcing Blog Area -->
+<div class="outsourcing-blog-area pb-120" id="trends">
+<div class="container">
+<div class="row justify-content-center g-4" data-disabled="true">
+<div class="col-xl-5 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-blog-content section-title-animation animation-style3">
+<span class="sub">HR Trends</span>
+<h2 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: center; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">L</div>
+<div style="position: relative; display: inline-block;">a</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">s</div>
+<div style="position: relative; display: inline-block;">t</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">H</div>
+<div style="position: relative; display: inline-block;">R</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">I</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">s</div>
+<div style="position: relative; display: inline-block;">i</div>
+<div style="position: relative; display: inline-block;">g</div>
+<div style="position: relative; display: inline-block;">h</div>
+<div style="position: relative; display: inline-block;">t</div>
+<div style="position: relative; display: inline-block;">s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">&amp;</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block;">T</div>
+<div style="position: relative; display: inline-block;">r</div>
+<div style="position: relative; display: inline-block;">e</div>
+<div style="position: relative; display: inline-block;">n</div>
+<div style="position: relative; display: inline-block;">d</div>
+<div style="position: relative; display: inline-block;">s</div>
+</div>
+</div>
+</h2>
+</div>
+</div>
+<div class="col-xl-7 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="outsourcing-blog-items">
+<div class="item">
+<div class="image">
+<a href="./pages/blog-details.html">
+<img alt="image" src="./assets/images/blog13.jpg"/>
+</a>
+</div>
+<div class="content">
+<ul class="list">
+<li>
+<i class="ri-calendar-line"></i>
+<span>Dec 10, 2025</span>
+</li>
+<li>
+<i class="ri-time-line"></i>
+<span>8 Min Read</span>
+</li>
+</ul>
+<h3>
+<a href="./pages/blog-details.html">Navigating 2024 Employment Law Changes: What
+                                        Every Hr Leader Needs To Know</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="image">
+<a href="./pages/blog-details.html">
+<img alt="image" src="./assets/images/blog14.jpg"/>
+</a>
+</div>
+<div class="content">
+<ul class="list">
+<li>
+<i class="ri-calendar-line"></i>
+<span>Dec 11, 2025</span>
+</li>
+<li>
+<i class="ri-time-line"></i>
+<span>7 Min Read</span>
+</li>
+</ul>
+<h3>
+<a href="./pages/blog-details.html">Building A Future-proof Talent Strategy:
+                                        Skills-based Hiring And Internal Mobility</a>
+</h3>
+</div>
+</div>
+<div class="item">
+<div class="image">
+<a href="./pages/blog-details.html">
+<img alt="image" src="./assets/images/blog15.jpg"/>
+</a>
+</div>
+<div class="content">
+<ul class="list">
+<li>
+<i class="ri-calendar-line"></i>
+<span>Dec 12, 2025</span>
+</li>
+<li>
+<i class="ri-time-line"></i>
+<span>5 Min Read</span>
+</li>
+</ul>
+<h3>
+<a href="./pages/blog-details.html">Measuring Hr Roi: How To Quantify The Impact Of
+                                        Your People Programs</a>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Outsourcing Blog Area -->
+<!-- Start Footer Area -->
+<footer class="footer-area pt-120">
+<div class="container">
+<div class="footer-top-info section-title-animation animation-style1">
+<h1 class="title-animation" style="perspective: 400px;">
+<div class="split-line" style="display: block; text-align: center; position: relative;">
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                L</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                e</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                t</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                '</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                s</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                T</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                a</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                l</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                k</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                W</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                i</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                t</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                h</div>
+</div>
+<div style="position:relative;display:inline-block;">
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                U</div>
+<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                s</div>
+</div>
+</div>
+</h1>
+<a class="link-btn" href="mailto:hello@timido.com">hello@IHR.com</a>
+<ul class="list">
+<li>
+<a href="https://www.facebook.com/" target="_blank">
+<i class="ri-facebook-fill"></i>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://x.com/" target="_blank">
+<i class="ri-twitter-x-line"></i>
+<span>X</span>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/" target="_blank">
+<i class="ri-linkedin-fill"></i>
+<span>LinkedIn</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/" target="_blank">
+<i class="ri-instagram-line"></i>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="row justify-content-center g-4" data-disabled="true">
+<div class="col-lg-4 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="single-footer-widget border-wrap">
+<p>Your trusted partner in finding and nurturing top talent—creating lasting success for
+                            businesses and careers.</p>
+<div class="subscribe-inner">
+<h4>Subscribe Newsletter</h4>
+<form>
+<input class="form-control" placeholder="Enter email address" type="text"/>
+<button type="submit"><i class="ri-send-plane-fill"></i></button>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+<div class="row justify-content-center g-4">
+<div class="col-lg-4 col-sm-4">
+<div class="single-footer-widget ps-5">
+<h3>Quick Links</h3>
+<ul class="list">
+<li>
+<a href="./index.html">Home</a>
+</li>
+<li>
+<a href="./pages/about-us.html">About Us</a>
+</li>
+<li>
+<a href="./pages/services-1.html">Services</a>
+</li>
+<li>
+<a href="./pages/case-studies.html">Case Studies</a>
+</li>
+<li>
+<a href="./pages/contact-us.html">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-sm-4">
+<div class="single-footer-widget ps-5">
+<h3>Industries</h3>
+<ul class="list">
+<li>
+<a href="./pages/service-details.html">Technology</a>
+</li>
+<li>
+<a href="./pages/service-details.html">Healthcare</a>
+</li>
+<li>
+<a href="./pages/service-details.html">Finance</a>
+</li>
+<li>
+<a href="./pages/service-details.html">Manufacturing</a>
+</li>
+<li>
+<a href="./pages/service-details.html">Retail</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-sm-4">
+<div class="single-footer-widget ps-3">
+<h3>Contact Info</h3>
+<ul class="info">
+<li>
+<b>Call:</b>
+<span><a href="tel:+919876543210">+91 98765 43210</a></span>
+</li>
+<li>
+<b>Email:</b>
+<span><a href="mailto:hello@IHR.com">hello@IHR.com</a></span>
+</li>
+<li>
+<b>Address:</b>
+<span>BKIT Solutions, Hyderabad, Telangana, India</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright-area">
+<div class="row justify-content-center align-items-center g-4">
+<div class="col-lg-6 col-md-12">
+<p>
+                            © <span>IHR</span>. All rights reserved. Built by <b>BKIT Solutions</b>
+</p>
+</div>
+<div class="col-lg-6 col-md-12">
+<ul class="info-links">
+<li>
+<a href="./pages/privacy-policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="./pages/terms-of-service.html">Terms Of Service</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-large-logo-wrap" style="position: absolute; bottom: 0; left: 0; right: 0; width: 100%; overflow: hidden; display: flex; justify-content: center; pointer-events: none; z-index: 0;">
+<img alt="large-logo" src="./assets/images/black-logo.svg" style="width: 100%; min-width: 800px; max-width: 1200px; transform: translateY(40%); filter: brightness(0) invert(1) opacity(0.08);"/>
+</div>
+</div>
+</footer>
+<!-- End Footer Area -->
+<!-- Back to Top -->
+<button class="position-fixed text-center border-0 p-0" id="back-to-top" type="button">
+<i class="ri-arrow-up-s-line"></i>
+</button>
+<!-- End Back to Top -->
+<!-- Link of JS Files -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/scrollCue.min.js"></script>
+<script src="./assets/js/simpleParallax.min.js"></script>
+<script src="./assets/js/fslightbox.min.js"></script>
+<script src="./assets/js/gsap.min.js"></script>
+<script src="./assets/js/ScrollTrigger.min.js"></script>
+<script src="./assets/js/SplitText.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

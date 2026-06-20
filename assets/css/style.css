@@ -125,7 +125,7 @@ This files table contents are outlined below>>>>>
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #BAE40E;
+  --bs-primary: #E63946;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -134,7 +134,7 @@ This files table contents are outlined below>>>>>
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-paragraph: #464646;
-  --bs-primary-rgb: 186, 228, 14;
+  --bs-primary-rgb: 230, 57, 70;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -143,7 +143,7 @@ This files table contents are outlined below>>>>>
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-paragraph-rgb: 70, 70, 70;
-  --bs-primary-text-emphasis: rgb(74.4, 91.2, 5.6);
+  --bs-primary-text-emphasis: rgb(92, 22.8, 28);
   --bs-secondary-text-emphasis: rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
   --bs-info-text-emphasis: rgb(5.2, 80.8, 96);
@@ -191,11 +191,11 @@ This files table contents are outlined below>>>>>
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #BAE40E;
-  --bs-link-color-rgb: 186, 228, 14;
+  --bs-link-color: #E63946;
+  --bs-link-color-rgb: 230, 57, 70;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: rgb(148.8, 182.4, 11.2);
-  --bs-link-hover-color-rgb: 149, 182, 11;
+  --bs-link-hover-color: rgb(211, 47, 47);
+  --bs-link-hover-color-rgb: 211, 47, 47;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -216,7 +216,7 @@ This files table contents are outlined below>>>>>
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(186, 228, 14, 0.25);
+  --bs-focus-ring-color: rgba(230, 57, 70, 0.25);
   --bs-form-valid-color: #198754;
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
@@ -831,7 +831,7 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #BAE40E;
+  --bs-primary: #E63946;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -840,7 +840,7 @@ progress {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-paragraph: #464646;
-  --bs-primary-rgb: 186, 228, 14;
+  --bs-primary-rgb: 230, 57, 70;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -849,7 +849,7 @@ progress {
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-paragraph-rgb: 70, 70, 70;
-  --bs-primary-text-emphasis: rgb(74.4, 91.2, 5.6);
+  --bs-primary-text-emphasis: rgb(92, 22.8, 28);
   --bs-secondary-text-emphasis: rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
   --bs-info-text-emphasis: rgb(5.2, 80.8, 96);
@@ -897,11 +897,11 @@ progress {
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #BAE40E;
-  --bs-link-color-rgb: 186, 228, 14;
+  --bs-link-color: #E63946;
+  --bs-link-color-rgb: 230, 57, 70;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: rgb(148.8, 182.4, 11.2);
-  --bs-link-hover-color-rgb: 149, 182, 11;
+  --bs-link-hover-color: rgb(211, 47, 47);
+  --bs-link-hover-color-rgb: 211, 47, 47;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -922,7 +922,7 @@ progress {
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(186, 228, 14, 0.25);
+  --bs-focus-ring-color: rgba(230, 57, 70, 0.25);
   --bs-form-valid-color: #198754;
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
@@ -2944,7 +2944,7 @@ progress {
   background-color: var(--bs-body-bg);
   border-color: rgb(220.5, 241.5, 134.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
@@ -3089,7 +3089,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: rgb(220.5, 241.5, 134.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -3173,11 +3173,11 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: rgb(220.5, 241.5, 134.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .form-check-input:checked {
-  background-color: #BAE40E;
-  border-color: #BAE40E;
+  background-color: #E63946;
+  border-color: #E63946;
 }
 .form-check-input:checked[type=checkbox] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -3186,8 +3186,8 @@ textarea.form-control-lg {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #BAE40E;
-  border-color: #BAE40E;
+  background-color: #E63946;
+  border-color: #E63946;
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -3264,10 +3264,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -3277,7 +3277,7 @@ textarea.form-control-lg {
   height: 1rem;
   margin-top: -0.25rem;
   appearance: none;
-  background-color: #BAE40E;
+  background-color: #E63946;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3303,7 +3303,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   appearance: none;
-  background-color: #BAE40E;
+  background-color: #E63946;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3774,8 +3774,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #BAE40E;
-  --bs-btn-border-color: #BAE40E;
+  --bs-btn-bg: #E63946;
+  --bs-btn-border-color: #E63946;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: rgb(196.35, 232.05, 50.15);
   --bs-btn-hover-border-color: rgb(192.9, 230.7, 38.1);
@@ -3785,8 +3785,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(192.9, 230.7, 38.1);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #BAE40E;
-  --bs-btn-disabled-border-color: #BAE40E;
+  --bs-btn-disabled-bg: #E63946;
+  --bs-btn-disabled-border-color: #E63946;
 }
 
 .btn-secondary {
@@ -3926,19 +3926,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #BAE40E;
-  --bs-btn-border-color: #BAE40E;
+  --bs-btn-color: #E63946;
+  --bs-btn-border-color: #E63946;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #BAE40E;
-  --bs-btn-hover-border-color: #BAE40E;
-  --bs-btn-focus-shadow-rgb: 186, 228, 14;
+  --bs-btn-hover-bg: #E63946;
+  --bs-btn-hover-border-color: #E63946;
+  --bs-btn-focus-shadow-rgb: 230, 57, 70;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #BAE40E;
-  --bs-btn-active-border-color: #BAE40E;
+  --bs-btn-active-bg: #E63946;
+  --bs-btn-active-border-color: #E63946;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #BAE40E;
+  --bs-btn-disabled-color: #E63946;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #BAE40E;
+  --bs-btn-disabled-border-color: #E63946;
   --bs-gradient: none;
 }
 
@@ -4197,7 +4197,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: var(--bs-body-color);
   --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #BAE40E;
+  --bs-dropdown-link-active-bg: #E63946;
   --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -4463,7 +4463,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #BAE40E;
+  --bs-dropdown-link-active-bg: #E63946;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
@@ -4604,7 +4604,7 @@ textarea.form-control-lg {
 }
 .nav-link:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
 }
 .nav-link.disabled, .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -4647,7 +4647,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #BAE40E;
+  --bs-nav-pills-link-active-bg: #E63946;
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
@@ -5334,8 +5334,8 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%2874.4, 91.2, 5.6%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%2892, 22.8, 28%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: var(--bs-primary-text-emphasis);
@@ -5501,10 +5501,10 @@ textarea.form-control-lg {
   --bs-pagination-hover-border-color: var(--bs-border-color);
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: var(--bs-secondary-bg);
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #BAE40E;
-  --bs-pagination-active-border-color: #BAE40E;
+  --bs-pagination-active-bg: #E63946;
+  --bs-pagination-active-border-color: #E63946;
   --bs-pagination-disabled-color: var(--bs-secondary-color);
   --bs-pagination-disabled-bg: var(--bs-secondary-bg);
   --bs-pagination-disabled-border-color: var(--bs-border-color);
@@ -5723,7 +5723,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #BAE40E;
+  --bs-progress-bar-bg: #E63946;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -5788,8 +5788,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: var(--bs-secondary-color);
   --bs-list-group-disabled-bg: var(--bs-body-bg);
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #BAE40E;
-  --bs-list-group-active-border-color: #BAE40E;
+  --bs-list-group-active-bg: #E63946;
+  --bs-list-group-active-border-color: #E63946;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -6133,7 +6133,7 @@ textarea.form-control-lg {
   --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
-  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(186, 228, 14, 0.25);
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
   --bs-btn-close-focus-opacity: 1;
   --bs-btn-close-disabled-opacity: 0.25;
   box-sizing: content-box;
@@ -12785,7 +12785,7 @@ p:last-child {
   color: #010101;
 }
 .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 
 a {
@@ -12865,7 +12865,7 @@ Default Btn Area CSS
   transition: 0.7s;
 }
 .default-btn:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 
 /*================================================
@@ -12944,7 +12944,7 @@ Back to Top CSS
   line-height: 40px;
   font-size: 25px;
   transition: 0.7s;
-  background: #BAE40E;
+  background: #E63946;
   color: #010101;
   border-radius: 50%;
 }
@@ -12980,9 +12980,9 @@ Pagination Area CSS
   transition: 0.7s;
 }
 .pagination-area a:hover, .pagination-area a.active {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .pagination-area a:hover i, .pagination-area a.active i {
   color: #010101;
@@ -13079,7 +13079,7 @@ Navbar Area CSS
   padding-right: 20px;
 }
 .navbar .navbar-toggler {
-  color: #BAE40E;
+  color: #E63946;
   font-size: inherit;
   box-shadow: unset;
   border: none;
@@ -13093,7 +13093,7 @@ Navbar Area CSS
   width: 30px;
   margin: 5px 0;
   display: block;
-  background: #BAE40E;
+  background: #E63946;
 }
 .navbar ul {
   margin-bottom: 0;
@@ -13310,7 +13310,7 @@ Navbar Area CSS
   font-weight: 400;
 }
 .navbar .others-option .option-item .info a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .navbar .others-option .option-item .search-toggler i {
   display: flex;
@@ -13326,7 +13326,7 @@ Navbar Area CSS
   cursor: pointer;
 }
 .navbar .others-option .option-item .search-toggler i:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
 }
 .navbar .others-option .option-item:last-child {
@@ -13375,10 +13375,10 @@ Navbar Area CSS
   color: #ffffff;
 }
 .navbar.navbar-style-three .navbar-nav .nav-item .nav-link:hover, .navbar.navbar-style-three .navbar-nav .nav-item .nav-link.active {
-  color: #BAE40E;
+  color: #E63946;
 }
 .navbar.navbar-style-three .navbar-nav .nav-item:hover .nav-link, .navbar.navbar-style-three .navbar-nav .nav-item.active .nav-link {
-  color: #BAE40E;
+  color: #E63946;
 }
 .navbar.navbar-style-three .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link {
   color: #010101;
@@ -13423,20 +13423,20 @@ Navbar Area CSS
   color: #ffffff;
 }
 .navbar.navbar-style-three .others-option .option-item .info a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .navbar.navbar-style-three .others-option .option-item .search-toggler i {
   background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 .navbar.navbar-style-three .others-option .option-item .search-toggler i:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
 }
 .navbar.navbar-style-three .others-option .option-item .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .navbar.navbar-style-three .others-option .option-item .default-btn:hover {
@@ -13464,7 +13464,7 @@ Navbar Area CSS
   backdrop-filter: blur(21px);
 }
 .navbar.navbar-style-four .others-option .option-item .info a {
-  color: #BAE40E;
+  color: #E63946;
 }
 .navbar.navbar-style-four .others-option .option-item .info a:hover {
   color: #ffffff;
@@ -13483,9 +13483,9 @@ Navbar Area CSS
   border: 1px solid #CCCCCC;
 }
 .navbar.bg-F8FAFC .others-option .option-item .search-toggler i:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 
 /*================================================
@@ -13514,7 +13514,7 @@ Responsive Sidebar Menu Area CSS
   height: 35px;
   width: 35px;
   line-height: 35px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 50px;
   transition: 0.7s;
@@ -13568,10 +13568,10 @@ Responsive Sidebar Menu Area CSS
   display: none;
 }
 .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-button:hover, .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-button.active {
-  color: #BAE40E;
+  color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-button:hover::before, .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-button.active::before {
-  color: #BAE40E;
+  color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-body {
   padding: 25px;
@@ -13589,7 +13589,7 @@ Responsive Sidebar Menu Area CSS
   background-color: transparent;
 }
 .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-body .accordion-item .accordion-link:hover, .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-body .accordion-item .accordion-link.active {
-  color: #BAE40E;
+  color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .accordion .accordion-item .accordion-body .accordion-item:last-child {
   margin-bottom: 0;
@@ -13618,7 +13618,7 @@ Responsive Sidebar Menu Area CSS
   font-weight: 400;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .info a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .search-form {
   position: relative;
@@ -13639,7 +13639,7 @@ Responsive Sidebar Menu Area CSS
   transition: 0.7s;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .search-form .form-control:focus {
-  border-bottom: 1px solid #BAE40E;
+  border-bottom: 1px solid #E63946;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .search-form .form-control:focus::placeholder {
   color: transparent;
@@ -13660,16 +13660,16 @@ Responsive Sidebar Menu Area CSS
   transition: 0.7s;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .search-form button i:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .default-btn {
   background-color: #ffffff;
   color: #010101;
-  border: 1px solid #BAE40E;
-  box-shadow: 2px 2px 0px #BAE40E;
+  border: 1px solid #E63946;
+  box-shadow: 2px 2px 0px #E63946;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item .default-btn:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .sidebar-menu-area .offcanvas-body .others-option .option-item:last-child {
   margin-bottom: 0;
@@ -13695,7 +13695,7 @@ Responsive Sidebar Menu Area CSS
   /* Handle */
 }
 .sidebar-menu-area .offcanvas-body::-webkit-scrollbar-thumb {
-  background: #BAE40E;
+  background: #E63946;
   transition: 0.7s;
   border-radius: 50px;
 }
@@ -13779,7 +13779,7 @@ Search Popup CSS
 }
 .search-popup .search-popup-content .search-popup-form .form-control:focus {
   box-shadow: unset;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .search-popup .search-popup-content .search-popup-form .form-control:focus::placeholder {
   color: transparent;
@@ -13799,7 +13799,7 @@ Search Popup CSS
   transition: 0.7s;
 }
 .search-popup .search-popup-content .search-popup-form button:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 
 /* Max width 767px */
@@ -13977,9 +13977,9 @@ Main Banner Area CSS
   margin-bottom: 45px;
 }
 .main-banner-content .inner .content .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .main-banner-content .inner .content .default-btn:hover {
@@ -14104,9 +14104,9 @@ Recruiting Banner Area CSS
   margin-bottom: 35px;
 }
 .recruiting-banner-right-content .content .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .recruiting-banner-right-content .content .default-btn:hover {
@@ -14146,7 +14146,7 @@ Recruiting Banner Area CSS
 }
 .recruiting-banner-right-content .profile-info .bottom .score strong {
   font-size: 20px;
-  color: #BAE40E;
+  color: #E63946;
 }
 
 .recruiting-banner-image img {
@@ -14281,7 +14281,7 @@ Consulting Banner Area CSS
   font-size: 42px;
   margin-bottom: 0;
   line-height: 1;
-  color: #BAE40E;
+  color: #E63946;
   font-family: "Lexend", sans-serif;
 }
 .consulting-banner-content .bottom .fun-items .fun span {
@@ -14343,7 +14343,7 @@ Outsourcing Banner Area CSS
   align-items: center;
   justify-content: center;
   padding: 5px 20px;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   border-radius: 50px;
   margin-bottom: 12px;
   color: #ffffff;
@@ -14354,9 +14354,9 @@ Outsourcing Banner Area CSS
   color: #ffffff;
 }
 .outsourcing-banner-content .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .outsourcing-banner-content .default-btn:hover {
@@ -14446,7 +14446,7 @@ Page Banner Area CSS
   color: #464646;
 }
 .page-banner-content .content .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .page-banner-content .content .list li::before {
   position: absolute;
@@ -14506,7 +14506,7 @@ Page Banner Area CSS
   transition: 0.7s;
 }
 .page-banner-right-content .wrap-content .list li a i:hover {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 
 /* Max width 767px */
@@ -15304,9 +15304,9 @@ Recruiting About Area CSS
   margin-top: 35px;
 }
 .recruiting-about-left-content .about-btn .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .recruiting-about-left-content .about-btn .default-btn:hover {
@@ -15358,7 +15358,7 @@ Overview Area CSS
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   padding: 7px 15px;
   border-radius: 50px;
@@ -15405,8 +15405,8 @@ Overview Area CSS
   z-index: -1;
 }
 .overview-card:hover .icon i {
-  border: 1px solid #BAE40E;
-  background-color: #BAE40E;
+  border: 1px solid #E63946;
+  background-color: #E63946;
 }
 
 /*================================================
@@ -15442,9 +15442,9 @@ Consulting About Area CSS
   margin-top: 30px;
 }
 .consulting-about-content .about-btn .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .consulting-about-content .about-btn .default-btn:hover {
@@ -15521,9 +15521,9 @@ Consulting Overview Area CSS
   align-items: center;
 }
 .consulting-overview-content .bottom .info .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .consulting-overview-content .bottom .info .default-btn:hover {
@@ -15536,7 +15536,7 @@ Consulting Overview Area CSS
   color: #ffffff;
 }
 .consulting-overview-content .bottom .info span a {
-  color: #BAE40E;
+  color: #E63946;
 }
 .consulting-overview-content .bottom .info span a:hover {
   color: #ffffff;
@@ -16079,9 +16079,9 @@ CTA Area CSS
   margin-bottom: 25px;
 }
 .cta-content .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .cta-content .default-btn:hover {
@@ -16127,7 +16127,7 @@ Consulting CTA Area CSS
 }
 .consulting-cta-items .item .icon i {
   display: flex;
-  color: #BAE40E;
+  color: #E63946;
   font-size: 50px;
 }
 .consulting-cta-items .item .title h3, .consulting-cta-items .item .title .h3 {
@@ -16141,7 +16141,7 @@ Consulting CTA Area CSS
 }
 
 .consulting-cta-content {
-  background-color: #BAE40E;
+  background-color: #E63946;
   padding: 30px;
   border-radius: 15px 15px 0 0;
 }
@@ -16208,7 +16208,7 @@ Outsourcing CTA Area CSS
 }
 .outsourcing-cta-content .list li a {
   font-size: 20px;
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-cta-content .list li strong {
   font-size: 20px;
@@ -16381,7 +16381,7 @@ Outsourcing CTA Area CSS
 Services Area CSS
 =================================================*/
 .services-card {
-  background-color: #BAE40E;
+  background-color: #E63946;
   padding: 30px 30px 0px 30px;
   border-radius: 15px;
 }
@@ -16418,13 +16418,13 @@ Services Area CSS
   color: #ffffff;
 }
 .services-card.wrap2 h3 a:hover, .services-card.wrap2 .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .services-card.wrap2 p {
   color: #ffffff;
 }
 .services-card.wrap2 .link-btn {
-  color: #BAE40E;
+  color: #E63946;
 }
 .services-card.wrap2 .link-btn:hover {
   color: #ffffff;
@@ -16485,7 +16485,7 @@ Services Area CSS
   text-decoration-line: underline;
 }
 .services-bottom-link span a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .services-bottom-link::before {
   position: absolute;
@@ -16512,7 +16512,7 @@ Recruiting Services Area CSS
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   padding: 7px 15px;
   border-radius: 50px;
@@ -16539,7 +16539,7 @@ Recruiting Services Area CSS
   margin-bottom: 15px;
 }
 .recruiting-services-card .content .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .recruiting-services-card .content .list li:last-child {
   margin-bottom: 0;
@@ -16576,8 +16576,8 @@ Recruiting Services Area CSS
   z-index: -1;
 }
 .recruiting-services-card:hover .icon i {
-  border: 1px solid #BAE40E;
-  background-color: #BAE40E;
+  border: 1px solid #E63946;
+  background-color: #E63946;
 }
 .recruiting-services-card.wrap2 .content p {
   margin-bottom: 15px;
@@ -16597,7 +16597,7 @@ Recruiting Services Area CSS
   border: 1px solid rgba(1, 1, 1, 0.2);
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .recruiting-services-bottom-link span a {
   font-weight: 500;
@@ -16657,7 +16657,7 @@ Consulting Services Area CSS
   margin-bottom: 20px;
 }
 .consulting-services-content .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .consulting-services-content .list li:last-child {
   margin-bottom: 0;
@@ -16678,7 +16678,7 @@ Consulting Services Area CSS
   border: 1px solid rgba(1, 1, 1, 0.2);
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .consulting-services-bottom-link span a {
   font-weight: 500;
@@ -16696,7 +16696,7 @@ Outsourcing Services Area CSS
   background-color: #010101;
 }
 .outsourcing-services-area .section-title .sub {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   color: #ffffff;
 }
 .outsourcing-services-area .section-title h2, .outsourcing-services-area .section-title .h2 {
@@ -16737,7 +16737,7 @@ Outsourcing Services Area CSS
   color: #ffffff;
 }
 .outsourcing-services-items .item .services-content h3 a:hover, .outsourcing-services-items .item .services-content .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-services-items .item .services-content p {
   color: #ffffff;
@@ -16755,7 +16755,7 @@ Outsourcing Services Area CSS
   margin-bottom: 15px;
 }
 .outsourcing-services-items .item .services-content .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-services-items .item .services-content .list li span {
   color: #CCCCCC;
@@ -16767,9 +16767,9 @@ Outsourcing Services Area CSS
   margin-top: 35px;
 }
 .outsourcing-services-items .item .services-content .service-btn .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .outsourcing-services-items .item .services-content .service-btn .default-btn:hover {
@@ -16818,7 +16818,7 @@ Traditional Staffing Area CSS
   margin-bottom: 15px;
 }
 .traditional-staffing-card .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .traditional-staffing-card .list li:last-child {
   margin-bottom: 0;
@@ -17122,7 +17122,7 @@ Process Area CSS
 }
 .process-card .icon i {
   display: flex;
-  color: #BAE40E;
+  color: #E63946;
   font-size: 50px;
 }
 .process-card h3, .process-card .h3 {
@@ -17326,7 +17326,7 @@ Recruiting Expertise Area CSS
   margin-bottom: 0;
 }
 .recruiting-expertise-items .item:hover {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 
 /* Max width 767px */
@@ -17429,7 +17429,7 @@ Specializations Area CSS
   font-size: 20px;
 }
 .specializations-card:hover i {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 
 /*================================================
@@ -17469,7 +17469,7 @@ Outsourcing Solutions Area CSS
   font-size: 20px;
 }
 .outsourcing-solutions-card:hover i {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 
 /* Max width 767px */
@@ -17516,7 +17516,7 @@ Case Studies Area CSS
 .case-studies-items .item .case-content i {
   font-size: 50px;
   display: flex;
-  color: #BAE40E;
+  color: #E63946;
 }
 .case-studies-items .item .case-content h3, .case-studies-items .item .case-content .h3 {
   font-size: 23.5px;
@@ -17528,7 +17528,7 @@ Case Studies Area CSS
   color: #ffffff;
 }
 .case-studies-items .item .case-content h3 a:hover, .case-studies-items .item .case-content .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .case-studies-items .item .case-right {
   display: flex;
@@ -17558,8 +17558,8 @@ Case Studies Area CSS
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .case-studies-items .item:hover .case-right .arrow-btn i {
-  background-color: #BAE40E;
-  border: 1px solid #BAE40E;
+  background-color: #E63946;
+  border: 1px solid #E63946;
   color: #010101;
 }
 
@@ -17597,7 +17597,7 @@ Success Stories Area CSS
   align-items: center;
   justify-content: center;
   padding: 8px 20px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 50px;
   position: absolute;
@@ -17623,7 +17623,7 @@ Success Stories Area CSS
   color: #ffffff;
 }
 .success-stories-items .item .content h3 a:hover, .success-stories-items .item .content .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .success-stories-items .item .content .list {
   margin-bottom: 0;
@@ -17639,7 +17639,7 @@ Success Stories Area CSS
   color: #ffffff;
 }
 .success-stories-items .item .content .list li a {
-  color: #BAE40E;
+  color: #E63946;
   font-weight: 500;
 }
 .success-stories-items .item .content .list li a:hover {
@@ -17654,7 +17654,7 @@ Success Stories Area CSS
   justify-content: center;
   height: 150px;
   width: 150px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   font-size: 42px;
   font-weight: bold;
@@ -17697,7 +17697,7 @@ Consulting Success Stories Area CSS
   color: #ffffff;
 }
 .consulting-success-stories-card .content h3 a:hover, .consulting-success-stories-card .content .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .consulting-success-stories-card .content p {
   margin-bottom: -25px;
@@ -17705,7 +17705,7 @@ Consulting Success Stories Area CSS
   transition: 0.7s;
 }
 .consulting-success-stories-card .content .link-btn {
-  color: #BAE40E;
+  color: #E63946;
   font-weight: 500;
   opacity: 0;
   visibility: hidden;
@@ -17736,7 +17736,7 @@ Consulting Success Stories Area CSS
 Outsourcing Case Studies Area CSS
 =================================================*/
 .outsourcing-case-studies-area {
-  background-color: #BAE40E;
+  background-color: #E63946;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -17797,7 +17797,7 @@ Outsourcing Case Studies Area CSS
 }
 .outsourcing-case-studies-items .item:hover .arrow-btn i {
   background-color: #010101;
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-case-studies-items .item:last-child {
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -17982,7 +17982,7 @@ Testimonial Area CSS
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   font-size: 14px;
   padding: 7px 15px;
@@ -18034,7 +18034,7 @@ Testimonial Area CSS
 Recruiting Testimonials Area CSS
 =================================================*/
 .recruiting-testimonials-area {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 
 .recruiting-testimonials-image {
@@ -18246,7 +18246,7 @@ Consulting Testimonials Area CSS
   background-color: #010101;
 }
 .consulting-testimonials-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .consulting-testimonials-pagination .swiper-pagination-bullet:first-child {
   margin-left: 0;
@@ -18503,9 +18503,9 @@ Blog Area CSS
 .blog-subscribe .content form .default-btn {
   width: 100%;
   border: none;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
   margin-top: 10px;
 }
@@ -18524,7 +18524,7 @@ Blog Area CSS
   margin-bottom: 35px;
 }
 .blog-items .item .date {
-  background-color: #BAE40E;
+  background-color: #E63946;
   padding: 25px;
   border-radius: 15px 100px 15px 15px;
   position: absolute;
@@ -18571,7 +18571,7 @@ Blog Area CSS
   color: #464646;
 }
 .blog-items .item .content .info .list li span a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .blog-items .item .content .info h3, .blog-items .item .content .info .h3 {
   font-size: 23.5px;
@@ -18600,7 +18600,7 @@ Recruiting Blog Area CSS
   align-items: center;
   justify-content: center;
   padding: 7px 20px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 50px;
   position: absolute;
@@ -18803,7 +18803,7 @@ Widget Area CSS
   color: #464646;
 }
 .widget-area .widget_search form .form-control:focus {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .widget-area .widget_search form .form-control:focus::placeholder {
   color: transparent;
@@ -18825,10 +18825,10 @@ Widget Area CSS
   line-height: 1;
 }
 .widget-area .widget_search form button:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .widget-area .widget_about {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .widget-area .widget_about h3, .widget-area .widget_about .h3 {
   font-size: 20px;
@@ -18855,7 +18855,7 @@ Widget Area CSS
   color: #010101;
 }
 .widget-area .widget_categories .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .widget-area .widget_categories .list li:last-child {
   margin-bottom: 0;
@@ -18881,7 +18881,7 @@ Widget Area CSS
   line-height: 1.1;
 }
 .widget-area .widget_posts_thumb .items .item .content span i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .widget-area .widget_posts_thumb .items .item .content h4, .widget-area .widget_posts_thumb .items .item .content .h4 {
   font-size: 16px;
@@ -18910,9 +18910,9 @@ Widget Area CSS
   margin-right: 5px;
 }
 .widget-area .widget_tag_cloud .tag-cloud a:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 
 /* Max width 767px */
@@ -19056,7 +19056,7 @@ Widget Area CSS
 Recruiting Choose Area CSS
 =================================================*/
 .recruiting-choose-area {
-  background-color: #BAE40E;
+  background-color: #E63946;
   overflow: hidden;
 }
 .recruiting-choose-area .container-fluid, .recruiting-choose-area .container-sm, .recruiting-choose-area .container-md, .recruiting-choose-area .container-lg, .recruiting-choose-area .container-xl, .recruiting-choose-area .container-xxl {
@@ -19157,7 +19157,7 @@ Consulting Choose Area CSS
 .consulting-choose-items .item .icon i {
   display: flex;
   font-size: 50px;
-  color: #BAE40E;
+  color: #E63946;
 }
 .consulting-choose-items .item h3, .consulting-choose-items .item .h3 {
   font-size: 23.5px;
@@ -19191,7 +19191,7 @@ Outsourcing Values Area CSS
 .outsourcing-values-card .icon i {
   display: flex;
   font-size: 100px;
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-values-card h3, .outsourcing-values-card .h3 {
   font-size: 23.5px;
@@ -19281,8 +19281,8 @@ Outsourcing Choose Area CSS
 }
 .outsourcing-faq-accordion .accordion .accordion-item .accordion-button:not(.collapsed)::before {
   content: "\f1af";
-  background-color: #BAE40E;
-  border: 1px solid #BAE40E;
+  background-color: #E63946;
+  border: 1px solid #E63946;
 }
 .outsourcing-faq-accordion .accordion .accordion-item .accordion-button.collapsed {
   background-color: transparent;
@@ -19530,7 +19530,7 @@ For Candidates Area CSS
   justify-content: center;
   height: 55px;
   width: 55px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 5px;
   font-size: 30px;
@@ -19582,13 +19582,13 @@ For Candidates Area CSS
 }
 .for-candidates-item .item .bottom span strong {
   font-size: 20.5px;
-  color: #BAE40E;
+  color: #E63946;
 }
 .for-candidates-item .item .bottom span:first-child {
   margin-top: 0;
 }
 .for-candidates-item .item.wrap2 {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .for-candidates-item .item.wrap2 .top h3, .for-candidates-item .item.wrap2 .top .h3 {
   color: #010101;
@@ -19660,9 +19660,9 @@ Next Role Area CSS
   color: transparent;
 }
 .next-role-form .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .next-role-form .default-btn:hover {
@@ -19702,7 +19702,7 @@ Resources Area CSS
   align-items: center;
   justify-content: center;
   padding: 7px 20px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 50px;
   position: absolute;
@@ -19860,7 +19860,7 @@ Recruiting Contact Area CSS
   justify-content: center;
   height: 50px;
   width: 50px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 5px;
   font-size: 20px;
@@ -19893,7 +19893,7 @@ Recruiting Contact Area CSS
   max-width: 210px;
 }
 .recruiting-contact-information .offices-info {
-  background-color: #BAE40E;
+  background-color: #E63946;
   padding: 30px;
   border-radius: 15px;
 }
@@ -19977,9 +19977,9 @@ Recruiting Contact Area CSS
   cursor: pointer;
 }
 .recruiting-contact-form .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .recruiting-contact-form .default-btn:hover {
@@ -20061,7 +20061,7 @@ Outsourcing Work Area CSS
   justify-content: center;
   line-height: 1;
   font-size: 100px;
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-work-card .inner h3, .outsourcing-work-card .inner .h3 {
   font-size: 23.5px;
@@ -20266,7 +20266,7 @@ Outsourcing Pricing Area CSS
   background-color: #010101;
 }
 .outsourcing-pricing-area .section-title .sub {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   color: #ffffff;
 }
 .outsourcing-pricing-area .section-title h2, .outsourcing-pricing-area .section-title .h2 {
@@ -20301,7 +20301,7 @@ Outsourcing Pricing Area CSS
 .outsourcing-pricing-card .price {
   font-size: 45px;
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: #BAE40E;
+  color: #E63946;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 20px;
@@ -20333,7 +20333,7 @@ Outsourcing Pricing Area CSS
   margin-bottom: 15px;
 }
 .outsourcing-pricing-card .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .outsourcing-pricing-card .list li span {
   color: #959595;
@@ -20345,9 +20345,9 @@ Outsourcing Pricing Area CSS
   margin-top: 30px;
 }
 .outsourcing-pricing-card .price-btn .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .outsourcing-pricing-card .price-btn .default-btn:hover {
@@ -20445,7 +20445,7 @@ Team Area CSS
   transition: 0.7s;
 }
 .team-card .image .social-list li a i:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .team-card .image::before {
   position: absolute;
@@ -20569,8 +20569,8 @@ Team Details Area CSS
   transition: 0.7s;
 }
 .team-details-desc .desc-info .social-list li a i:hover {
-  background-color: #BAE40E;
-  border: 1px solid #BAE40E;
+  background-color: #E63946;
+  border: 1px solid #E63946;
 }
 .team-details-desc .desc-info .list {
   margin-bottom: 0;
@@ -20592,7 +20592,7 @@ Team Details Area CSS
   font-weight: 600;
 }
 .team-details-desc .desc-info .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .team-details-desc .desc-info .list li:last-child {
   margin-bottom: 0;
@@ -20634,7 +20634,7 @@ Team Details Area CSS
   margin-bottom: 0;
 }
 .team-details-desc .expertise-items .item:hover {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .team-details-desc .experience-items {
   margin-top: 25px;
@@ -20669,7 +20669,7 @@ Team Details Area CSS
   top: 0;
   height: 15px;
   width: 15px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   border-radius: 50px;
 }
 .team-details-desc .experience-items .item:last-child {
@@ -20758,7 +20758,7 @@ Service Details Area CSS
   margin-bottom: 15px;
 }
 .service-details-content .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .service-details-content .list li:last-child {
   margin-bottom: 0;
@@ -20772,7 +20772,7 @@ Service Details Area CSS
 Overview CTA Area CSS
 =================================================*/
 .overview-cta-inner {
-  background-color: #BAE40E;
+  background-color: #E63946;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -20904,7 +20904,7 @@ For Employers Area CSS
   color: #959595;
 }
 .for-employers-item .item.wrap2 {
-  background-color: #BAE40E;
+  background-color: #E63946;
 }
 .for-employers-item .item.wrap2 .content h3, .for-employers-item .item.wrap2 .content .h3 {
   color: #010101;
@@ -20934,7 +20934,7 @@ Positions Area CSS
   align-items: center;
   justify-content: center;
   padding: 7px 20px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
   border-radius: 50px;
   margin-bottom: 18px;
@@ -20947,7 +20947,7 @@ Positions Area CSS
   color: #ffffff;
 }
 .positions-card h3 a:hover, .positions-card .h3 a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .positions-card .list {
   margin-bottom: 18px;
@@ -21066,9 +21066,9 @@ Appointment Area CSS
   padding-top: 20px;
 }
 .appointment-form .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .appointment-form .default-btn:hover {
@@ -21117,7 +21117,7 @@ Appointment Area CSS
   transition: 0.7s;
 }
 .appointment-sidebar .calendar-container .month button:hover {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .appointment-sidebar .calendar-container {
   /* Days of Week */
@@ -21158,7 +21158,7 @@ Appointment Area CSS
   background: transparent;
 }
 .appointment-sidebar .calendar-container .days div:hover, .appointment-sidebar .calendar-container .days div.active {
-  background: #BAE40E;
+  background: #E63946;
   color: #010101;
 }
 .appointment-sidebar .calendar-container {
@@ -21192,12 +21192,12 @@ Appointment Area CSS
 }
 .appointment-sidebar .calendar-container .time-slots .slot::before {
   content: "✔";
-  color: #BAE40E;
+  color: #E63946;
   transition: 0.7s;
 }
 .appointment-sidebar .calendar-container .time-slots .slot:hover, .appointment-sidebar .calendar-container .time-slots .slot.active {
-  border: 1px solid #BAE40E;
-  background: #BAE40E;
+  border: 1px solid #E63946;
+  background: #E63946;
   color: #010101;
 }
 .appointment-sidebar .calendar-container .time-slots .slot:hover::before, .appointment-sidebar .calendar-container .time-slots .slot.active::before {
@@ -21269,7 +21269,7 @@ Career Details Area CSS
   margin-bottom: 15px;
 }
 .career-details-desc .info-list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .career-details-desc .info-list li:last-child {
   margin-bottom: 0;
@@ -21319,9 +21319,9 @@ Career Details Area CSS
   padding-top: 20px;
 }
 .career-details-form .default-btn {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .career-details-form .default-btn:hover {
@@ -21378,7 +21378,7 @@ Case Feature Area CSS
   color: #ffffff;
 }
 .case-feature-card .content span {
-  color: #BAE40E;
+  color: #E63946;
   display: block;
   margin-top: 12px;
 }
@@ -21395,7 +21395,7 @@ Case Feature Area CSS
   transition: 0.7s;
 }
 .case-feature-card:hover .icon i {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
 }
 
@@ -21494,7 +21494,7 @@ Case Study Details Area CSS
   color: #010101;
 }
 .case-studies-details-desc .view-card .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .case-studies-details-desc .view-card .list li:last-child {
   margin-bottom: 0;
@@ -21537,7 +21537,7 @@ Case Study Details Area CSS
   top: 0;
   height: 15px;
   width: 15px;
-  background-color: #BAE40E;
+  background-color: #E63946;
   border-radius: 50px;
 }
 .case-studies-details-desc .process-items .item:last-child {
@@ -21558,7 +21558,7 @@ Case Study Details Area CSS
   color: #010101;
 }
 .case-studies-details-desc .bottom-list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .case-studies-details-desc .bottom-list li:last-child {
   margin-bottom: 0;
@@ -21756,7 +21756,7 @@ Blog Details Area CSS
   color: #010101;
 }
 .blog-details-desc .top .info-list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .blog-details-desc .desc-image img {
   border-radius: 15px;
@@ -21781,7 +21781,7 @@ Blog Details Area CSS
   color: #010101;
 }
 .blog-details-desc .list li i {
-  color: #BAE40E;
+  color: #E63946;
 }
 .blog-details-desc .list li:last-child {
   margin-bottom: 0;
@@ -21830,7 +21830,7 @@ Blog Details Area CSS
   color: #464646;
 }
 .blog-details-desc .article-footer .tags li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .blog-details-desc .article-footer .social {
   display: flex;
@@ -21860,8 +21860,8 @@ Blog Details Area CSS
   transition: 0.7s;
 }
 .blog-details-desc .article-footer .social li a i:hover {
-  border: 1px solid #BAE40E;
-  color: #BAE40E;
+  border: 1px solid #E63946;
+  color: #E63946;
 }
 .blog-details-desc .desc-comment {
   margin-top: 50px;
@@ -21957,7 +21957,7 @@ Blog Details Area CSS
   transition: 0.7s;
 }
 .blog-details-desc .leave-form form .form-group .form-control:focus {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .blog-details-desc .leave-form form .form-group .form-control:focus::placeholder {
   color: transparent;
@@ -21983,9 +21983,9 @@ Blog Details Area CSS
 }
 .blog-details-desc .leave-form form .default-btn {
   border: none;
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
   box-shadow: 2px 2px 0px #010101;
 }
 .blog-details-desc .leave-form form .default-btn:hover {
@@ -22131,7 +22131,7 @@ Profile Authentication Area CSS
   transition: 0.7s;
 }
 .pa-tabs-inner form .form-group .form-control:focus {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .pa-tabs-inner form .form-group .form-control:focus::placeholder {
   color: transparent;
@@ -22147,7 +22147,7 @@ Profile Authentication Area CSS
   color: #464646;
 }
 .pa-tabs-inner form .form-group .forgot-link:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .pa-tabs-inner form .form-group .form-check {
   display: flex;
@@ -22217,7 +22217,7 @@ Profile Authentication Area CSS
   transition: 0.7s;
 }
 .pa-tabs-inner form .authentication-btn-list li button:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
 }
 .pa-tabs-inner form .authentication-btn-list li:last-child {
@@ -22227,7 +22227,7 @@ Profile Authentication Area CSS
   background: #1877F2;
 }
 .pa-tabs-inner form .authentication-btn-list li:last-child button:hover {
-  background-color: #BAE40E;
+  background-color: #E63946;
   color: #010101;
 }
 
@@ -22280,7 +22280,7 @@ Profile Authentication Area CSS
   transition: 0.7s;
 }
 .forgot-container form .form-group .form-control:focus {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .forgot-container form .form-group .form-control:focus::placeholder {
   color: transparent;
@@ -22337,7 +22337,7 @@ Privacy Policy Area CSS
   color: #464646;
 }
 .privacy-policy-content .inner .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .privacy-policy-content .inner .list li::before {
   position: absolute;
@@ -22408,7 +22408,7 @@ Terms & Condition Area CSS
   color: #464646;
 }
 .terms-condition-content .inner .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .terms-condition-content .inner .list li::before {
   position: absolute;
@@ -22514,7 +22514,7 @@ Footer Area CSS
   color: #464646;
 }
 .footer-area.consulting-footer .single-footer-widget .list li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .footer-area.consulting-footer .single-footer-widget .info li b {
   color: #464646;
@@ -22526,7 +22526,7 @@ Footer Area CSS
   color: #010101;
 }
 .footer-area.consulting-footer .single-footer-widget .info li span a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .footer-area.consulting-footer .single-footer-widget.border-wrap::before {
   background-color: #CCCCCC;
@@ -22539,19 +22539,19 @@ Footer Area CSS
   color: #464646;
 }
 .footer-area.consulting-footer .copyright-area p span {
-  color: #BAE40E;
+  color: #E63946;
 }
 .footer-area.consulting-footer .copyright-area p a {
   color: #010101;
 }
 .footer-area.consulting-footer .copyright-area p a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .footer-area.consulting-footer .copyright-area .info-links li a {
   color: #464646;
 }
 .footer-area.consulting-footer .copyright-area .info-links li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .footer-area.consulting-footer .copyright-area .info-links li::before {
   background-color: #CCCCCC;
@@ -22571,7 +22571,7 @@ Footer Area CSS
 }
 .footer-top-info .link-btn {
   font-size: 42px;
-  color: #BAE40E;
+  color: #E63946;
   display: block;
   margin-bottom: 30px;
   transition: 0.7s;
@@ -22607,7 +22607,7 @@ Footer Area CSS
   color: #959595;
 }
 .footer-top-info .list li a:hover {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 
 .single-footer-widget .widget-logo {
@@ -22667,7 +22667,7 @@ Footer Area CSS
   color: #ffffff;
 }
 .single-footer-widget .info li span a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .single-footer-widget .info li:last-child {
   margin-bottom: 0;
@@ -22710,8 +22710,8 @@ Footer Area CSS
   transition: 0.7s;
 }
 .single-footer-widget .social-list li a i:hover {
-  background-color: #BAE40E;
-  border: 1px solid #BAE40E;
+  background-color: #E63946;
+  border: 1px solid #E63946;
   color: #010101;
 }
 .single-footer-widget .subscribe-inner {
@@ -22743,7 +22743,7 @@ Footer Area CSS
   transition: 0.7s;
 }
 .single-footer-widget .subscribe-inner form .form-control:focus {
-  border: 1px solid #BAE40E;
+  border: 1px solid #E63946;
 }
 .single-footer-widget .subscribe-inner form .form-control:focus::placeholder {
   color: transparent;
@@ -22752,7 +22752,7 @@ Footer Area CSS
   padding: 0;
   border: none;
   background-color: transparent;
-  color: #BAE40E;
+  color: #E63946;
   font-size: 20px;
   transition: 0.7s;
   position: absolute;
@@ -22775,13 +22775,13 @@ Footer Area CSS
   color: #959595;
 }
 .copyright-area p span {
-  color: #BAE40E;
+  color: #E63946;
 }
 .copyright-area p a {
   color: #ffffff;
 }
 .copyright-area p a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .copyright-area .info-links {
   margin-bottom: 0;
@@ -22799,7 +22799,7 @@ Footer Area CSS
   color: #959595;
 }
 .copyright-area .info-links li a:hover {
-  color: #BAE40E;
+  color: #E63946;
 }
 .copyright-area .info-links li::before {
   position: absolute;
