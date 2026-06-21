@@ -1,20 +1,376 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="zxx" style="scroll-behavior: smooth;">
 <head>
-<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="../assets/css/bootstrap.bundle.min.css" rel="stylesheet"/>
+<!-- Link of CSS Files -->
+<link href="../assets/css/animate.min.css" rel="stylesheet"/>
+<link href="../assets/css/swiper-bundle.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="../assets/css/scrollCue.min.css" rel="stylesheet"/>
 <link href="../assets/css/style.css" rel="stylesheet"/>
-<title>{title} - IHR</title>
+<link href="../assets/css/custom.css" rel="stylesheet"/>
+<title>IHR - HR Community Platform</title>
+<link href="../assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<style class="fslightbox-styles">
+        .fslightbox-absoluted {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-fade-in {
+            animation: fslightbox-fade-in .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out {
+            animation: fslightbox-fade-out .3s ease
+        }
+
+        .fslightbox-fade-in-strong {
+            animation: fslightbox-fade-in-strong .3s cubic-bezier(0, 0, .7, 1)
+        }
+
+        .fslightbox-fade-out-strong {
+            animation: fslightbox-fade-out-strong .3s ease
+        }
+
+        @keyframes fslightbox-fade-in {
+            from {
+                opacity: .65
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out {
+            from {
+                opacity: .35
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        @keyframes fslightbox-fade-in-strong {
+            from {
+                opacity: .3
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fslightbox-fade-out-strong {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .fslightbox-cursor-grabbing {
+            cursor: grabbing
+        }
+
+        .fslightbox-full-dimension {
+            width: 100%;
+            height: 100%
+        }
+
+        .fslightbox-open {
+            overflow: hidden;
+            height: 100%
+        }
+
+        .fslightbox-flex-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .fslightbox-opacity-0 {
+            opacity: 0 !important
+        }
+
+        .fslightbox-opacity-1 {
+            opacity: 1 !important
+        }
+
+        .fslightbox-scrollbarfix {
+            padding-right: 17px
+        }
+
+        .fslightbox-transform-transition {
+            transition: transform .3s
+        }
+
+        .fslightbox-container {
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
+            touch-action: pinch-zoom;
+            z-index: 1000000000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .fslightbox-container * {
+            box-sizing: border-box
+        }
+
+        .fslightbox-svg-path {
+            transition: fill .15s ease;
+            fill: #ddd
+        }
+
+        .fslightbox-nav {
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fslightbox-slide-number-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            font-size: 15px;
+            color: #d7d7d7;
+            z-index: 0;
+            max-width: 55px;
+            text-align: left
+        }
+
+        .fslightbox-slide-number-container .fslightbox-flex-centered {
+            height: 100%
+        }
+
+        .fslightbox-slash {
+            display: block;
+            margin: 0 5px;
+            width: 1px;
+            height: 12px;
+            transform: rotate(15deg);
+            background: #fff
+        }
+
+        .fslightbox-toolbar {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        .fslightbox-toolbar-button {
+            height: 100%;
+            width: 45px;
+            cursor: pointer
+        }
+
+        .fslightbox-toolbar-button:hover .fslightbox-svg-path {
+            fill: #fff
+        }
+
+        .fslightbox-slide-btn-container {
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 6px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+            transform: translateY(-50%)
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container {
+                padding: 22px 22px 22px 6px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container {
+                padding: 30px 30px 30px 6px
+            }
+        }
+
+        .fslightbox-slide-btn-container:hover .fslightbox-svg-path {
+            fill: #f1f1f1
+        }
+
+        .fslightbox-slide-btn {
+            padding: 9px;
+            font-size: 26px;
+            background: rgba(35, 35, 35, .65)
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn {
+                padding: 10px
+            }
+        }
+
+        @media (min-width:1600px) {
+            .fslightbox-slide-btn {
+                padding: 11px
+            }
+        }
+
+        .fslightbox-slide-btn-container-previous {
+            left: 0
+        }
+
+        @media (max-width:475.99px) {
+            .fslightbox-slide-btn-container-previous {
+                padding-left: 3px
+            }
+        }
+
+        .fslightbox-slide-btn-container-next {
+            right: 0;
+            padding-left: 12px;
+            padding-right: 3px
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 22px
+            }
+        }
+
+        @media (min-width:768px) {
+            .fslightbox-slide-btn-container-next {
+                padding-left: 30px
+            }
+        }
+
+        @media (min-width:476px) {
+            .fslightbox-slide-btn-container-next {
+                padding-right: 6px
+            }
+        }
+
+        .fslightbox-down-event-detector {
+            position: absolute;
+            z-index: 1
+        }
+
+        .fslightbox-slide-swiping-hoverer {
+            z-index: 4
+        }
+
+        .fslightbox-invalid-file-wrapper {
+            font-size: 22px;
+            color: #eaebeb;
+            margin: auto
+        }
+
+        .fslightbox-video {
+            object-fit: cover
+        }
+
+        .fslightbox-youtube-iframe {
+            border: 0
+        }
+
+        .fslightboxl {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 67px;
+            height: 67px
+        }
+
+        .fslightboxl div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            margin: 6px;
+            border: 5px solid;
+            border-color: #999 transparent transparent transparent;
+            border-radius: 50%;
+            animation: fslightboxl 1.2s cubic-bezier(.5, 0, .5, 1) infinite
+        }
+
+        .fslightboxl div:nth-child(1) {
+            animation-delay: -.45s
+        }
+
+        .fslightboxl div:nth-child(2) {
+            animation-delay: -.3s
+        }
+
+        .fslightboxl div:nth-child(3) {
+            animation-delay: -.15s
+        }
+
+        @keyframes fslightboxl {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fslightbox-source {
+            position: relative;
+            z-index: 2;
+            opacity: 0
+        }
+    </style>
 </head>
-<body>
+<body style="">
+<!-- Start Preloader Area -->
+<div class="preloader-area text-center position-fixed top-0 bottom-0 start-0 end-0" id="preloader" style="display: none;">
+<div class="loader position-absolute start-0 end-0">
+<img alt="favicon" src="../assets/images/favicon.svg"/>
+<div class="waviy position-relative">
+<span class="d-inline-block">T</span>
+<span class="d-inline-block">I</span>
+<span class="d-inline-block">M</span>
+<span class="d-inline-block">I</span>
+<span class="d-inline-block">D</span>
+<span class="d-inline-block">O</span>
+</div>
+</div>
+</div>
+<!-- End Preloader Area -->
+<!-- Start Navbar Area -->
 <nav class="navbar navbar-expand-xl navbar-style-two navbar-style-three navbar-style-four" id="navbar">
 <div class="container-fluid">
 <div class="wrap-inner">
 <a class="navbar-brand" href="../index.html">
-<img alt="logo" src="../assets/images/black-logo.png" style="max-height: 100px; object-fit: contain;"/>
+<img alt="logo" src="../assets/images/logo.jpeg" style="max-height: 60px; object-fit: contain; mix-blend-mode: multiply;"/>
 </a>
 <button class="navbar-toggler" data-bs-target="#sidebarOffcanvas" data-bs-toggle="offcanvas">
 <span class="burger-menu">
@@ -54,17 +410,6 @@
 </ul>
 <div class="others-option d-flex align-items-center">
 <div class="option-item">
-<div class="info">
-<span>Call Us Now</span>
-<a href="tel:552588494">+55 258 8494</a>
-</div>
-</div>
-<div class="option-item">
-<div class="search-toggler">
-<i class="ri-search-line"></i>
-</div>
-</div>
-<div class="option-item">
 <a class="default-btn" href="./book-an-appointment.html">Hire Talent</a>
 </div>
 </div>
@@ -72,195 +417,189 @@
 </div>
 </div>
 </nav>
-<div class="page-title-area" style="background-color: #f8f9fa; padding: 100px 0 50px 0; text-align: center; border-bottom: 1px solid #eee;">
-<div class="container">
-<h1 style="color: #E63946; font-weight: 700;">{title}</h1>
-<p style="color: #6c757d;">{objective}</p>
+<!-- End Navbar Area -->
+<!-- Start Responsive Sidebar Menu Area -->
+<div class="sidebar-menu-area offcanvas offcanvas-end" id="sidebarOffcanvas" tabindex="-1" style="background-color: #ffffff !important;">
+<div class="offcanvas-header" style="border-bottom: 1px solid rgba(0,0,0,0.05); padding: 20px 25px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+<a href="../index.html">
+<img alt="logo" src="../assets/images/logo.jpeg" style="max-height: 50px; object-fit: contain;"/>
+</a>
+<button aria-label="Close" class="close-btn" data-bs-dismiss="offcanvas" type="button" style="background: rgba(0,0,0,0.05) !important; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border: none; font-size: 1.2rem; opacity: 1 !important; visibility: visible !important;">
+<i class="ri-close-line" style="color: #1a202c !important; font-weight: 800 !important; font-size: 20px !important;"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="accordion" id="sidebarAccordion">
+<div class="accordion-item"><a class="accordion-button without-icon" href="#home">Home</a></div>
+<div class="accordion-item"><a class="accordion-button without-icon" href="#about">About</a></div>
+<div class="accordion-item"><a class="accordion-button without-icon" href="#hiring">Hiring Support</a>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapseExplore" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseExplore" data-bs-toggle="collapse" type="button">
+                        Explore
+                    </button>
+<div class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion" id="collapseExplore">
+<div class="accordion-body">
+<div class="accordion" id="sidebarAccordionExplore">
+<div class="accordion-item"><a class="accordion-link" href="#trainings">Trainings</a>
+</div>
+<div class="accordion-item"><a class="accordion-link" href="#certifications">Certifications</a></div>
+<div class="accordion-item"><a class="accordion-link" href="#events">Events</a></div>
+<div class="accordion-item" style="border-bottom: none !important;"><a class="accordion-link" href="#sports">HR Sports</a></div>
 </div>
 </div>
-<div class="content-area" style="padding: 60px 0; min-height: 50vh;">
-<div class="container">
-            {content}
+</div>
+</div>
+<div class="accordion-item">
+<button aria-controls="collapseInsights" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseInsights" data-bs-toggle="collapse" type="button">
+                        Insights
+                    </button>
+<div class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion" id="collapseInsights">
+<div class="accordion-body">
+<div class="accordion" id="sidebarAccordionInsights">
+<div class="accordion-item"><a class="accordion-link" href="#trends">HR Trends</a></div>
+<div class="accordion-item"><a class="accordion-link" href="#featured">Featured HRs</a>
+</div>
+<div class="accordion-item" style="border-bottom: none !important;"><a class="accordion-link" href="#community">Community
+                                        Stats</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item" style="border-bottom: none !important;"><a class="accordion-button without-icon" href="#contact" style="border-bottom: none !important;">Contact Us</a>
+</div>
+</div>
+<div class="others-option mt-2" style="border-top: none;">
+<a class="default-btn w-100 text-center" href="./book-an-appointment.html">Hire Talent</a>
+</div>
+</div>
+</div>
+</div>
+<!-- End Responsive Sidebar Menu Area -->
+<!-- Premium Placeholder Area -->
+<div class="placeholder-area" style="background-color: #0b0f19; min-height: 80vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+    <!-- Abstract Background Elements -->
+    <div style="position: absolute; top: -10%; right: -5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(230,57,70,0.15) 0%, rgba(11,15,25,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: -10%; left: -5%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(11,15,25,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+
+    <div class="container text-center" style="position: relative; z-index: 1;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background: rgba(255,255,255,0.05); border-radius: 20px; color: #E63946; font-size: 32px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.1);">
+            <i class="ri-tools-line"></i>
         </div>
+        <h1 style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 3.5rem; color: #ffffff; margin-bottom: 20px;">Events</h1>
+        <p style="color: #cbd5e1; font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px auto; line-height: 1.6;">We're currently building out this section to bring you the best possible experience. Stay tuned for updates!</p>
+        
+        <div class="d-flex justify-content-center gap-3">
+            <a href="../index.html" class="default-btn primary-btn" style="padding: 15px 35px; border: none;">Return Home</a>
+            <a href="./contact.html" class="default-btn" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 15px 35px;">Contact Support</a>
+        </div>
+    </div>
 </div>
-<footer class="footer-area pt-120">
+<!-- Start Footer Area -->
+<footer class="footer-area" style="background-color: #0b0f19; color: #cbd5e1; padding-top: 80px; padding-bottom: 30px; border-top: 1px solid rgba(255,255,255,0.05); position: relative; z-index: 1;">
 <div class="container">
-<div class="footer-top-info section-title-animation animation-style1">
-<h1 class="title-animation" style="perspective: 400px;">
-<div class="split-line" style="display: block; text-align: center; position: relative;">
-<div style="position:relative;display:inline-block;">
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                L</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                e</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                t</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                '</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                s</div>
-</div>
-<div style="position:relative;display:inline-block;">
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                T</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                a</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                l</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                k</div>
-</div>
-<div style="position:relative;display:inline-block;">
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                W</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                i</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                t</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                h</div>
-</div>
-<div style="position:relative;display:inline-block;">
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                U</div>
-<div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                s</div>
-</div>
-</div>
-</h1>
-<a class="link-btn" href="mailto:hello@timido.com">hello@IHR.com</a>
-<ul class="list">
-<li>
-<a href="https://www.facebook.com/" target="_blank">
-<i class="ri-facebook-fill"></i>
-<span>Facebook</span>
+<div class="row justify-content-between g-5 mb-5">
+<!-- Column 1: Brand & About -->
+<div class="col-lg-4 col-md-6">
+<div class="footer-widget pe-lg-4">
+<a href="../index.html" class="d-inline-block mb-4" style="background: #ffffff; padding: 10px 20px; border-radius: 8px;">
+<img src="../assets/images/logo.jpeg" alt="IHR Logo" style="height: 45px; object-fit: contain; mix-blend-mode: multiply;">
 </a>
-</li>
-<li>
-<a href="https://x.com/" target="_blank">
-<i class="ri-twitter-x-line"></i>
-<span>X</span>
-</a>
-</li>
-<li>
-<a href="https://www.linkedin.com/" target="_blank">
-<i class="ri-linkedin-fill"></i>
-<span>LinkedIn</span>
-</a>
-</li>
-<li>
-<a href="https://www.instagram.com/" target="_blank">
-<i class="ri-instagram-line"></i>
-<span>Instagram</span>
-</a>
-</li>
+<p style="color: #94a3b8; line-height: 1.7; margin-bottom: 25px; font-size: 0.95rem;">
+Your trusted partner in finding and nurturing top talent—creating lasting success for businesses and careers across the globe.
+</p>
+<ul class="list-unstyled d-flex gap-3 m-0 p-0 social-links">
+<li><a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s ease;"><i class="ri-facebook-fill"></i></a></li>
+<li><a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s ease;"><i class="ri-twitter-x-line"></i></a></li>
+<li><a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s ease;"><i class="ri-linkedin-fill"></i></a></li>
+<li><a href="#" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s ease;"><i class="ri-instagram-line"></i></a></li>
 </ul>
 </div>
-<div class="row justify-content-center g-4" data-disabled="true">
-<div class="col-lg-4 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
-<div class="single-footer-widget border-wrap">
-<p>Your trusted partner in finding and nurturing top talent—creating lasting success for
-                            businesses and careers.</p>
-<div class="subscribe-inner">
-<h4>Subscribe Newsletter</h4>
-<form>
-<input class="form-control" placeholder="Enter email address" type="text"/>
-<button type="submit"><i class="ri-send-plane-fill"></i></button>
+</div>
+
+<!-- Column 2: Quick Links -->
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h4 style="color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.1rem; margin-bottom: 25px;">Quick Links</h4>
+<ul class="list-unstyled p-0 m-0 footer-links" style="display: flex; flex-direction: column; gap: 12px;">
+<li><a href="../index.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Home</a></li>
+<li><a href="./about-us.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">About</a></li>
+<li><a href="./hiring-support.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Hiring Support</a></li>
+<li><a href="./contact-us.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Column 3: Explore & Insights -->
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h4 style="color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.1rem; margin-bottom: 25px;">Explore</h4>
+<ul class="list-unstyled p-0 m-0 footer-links" style="display: flex; flex-direction: column; gap: 12px;">
+<li><a href="./trainings.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Trainings & Certifications</a></li>
+<li><a href="./events.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Events</a></li>
+<li><a href="./sports.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">HR Sports</a></li>
+<li><a href="./insights.html" style="color: #94a3b8; text-decoration: none; transition: color 0.3s ease;">Insights & Blog</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Column 4: Newsletter -->
+<div class="col-lg-3 col-md-6">
+<div class="footer-widget">
+<h4 style="color: #fff; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.1rem; margin-bottom: 25px;">Newsletter</h4>
+<p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px;">Subscribe to our newsletter for the latest HR updates.</p>
+<form style="position: relative;" class="footer-newsletter">
+<input type="email" placeholder="Email address" required style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 20px; border-radius: 50px; font-size: 0.95rem; outline: none;">
+<button type="submit" style="position: absolute; right: 5px; top: 5px; bottom: 5px; width: 40px; border-radius: 50%; background: #E63946; border: none; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.3s ease;">
+<i class="ri-arrow-right-line"></i>
+</button>
 </form>
-</div>
-</div>
-</div>
-<div class="col-lg-8 col-md-12" data-show="true" style="animation-name: slideInUp; animation-duration: 1000ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
-<div class="row justify-content-center g-4">
-<div class="col-lg-4 col-sm-4">
-<div class="single-footer-widget ps-5">
-<h3>Quick Links</h3>
-<ul class="list">
-<li>
-<a href="../index.html">Home</a>
-</li>
-<li>
-<a href="./about-us.html">About Us</a>
-</li>
-<li>
-<a href="./services-1.html">Services</a>
-</li>
-<li>
-<a href="./case-studies.html">Case Studies</a>
-</li>
-<li>
-<a href="./contact-us.html">Contact Us</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-sm-4">
-<div class="single-footer-widget ps-5">
-<h3>Industries</h3>
-<ul class="list">
-<li>
-<a href="./service-details.html">Technology</a>
-</li>
-<li>
-<a href="./service-details.html">Healthcare</a>
-</li>
-<li>
-<a href="./service-details.html">Finance</a>
-</li>
-<li>
-<a href="./service-details.html">Manufacturing</a>
-</li>
-<li>
-<a href="./service-details.html">Retail</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-sm-4">
-<div class="single-footer-widget ps-3">
-<h3>Contact Info</h3>
-<ul class="info">
-<li>
-<b>Call:</b>
-<span><a href="tel:+919876543210">+91 98765 43210</a></span>
-</li>
-<li>
-<b>Email:</b>
-<span><a href="mailto:hello@IHR.com">hello@IHR.com</a></span>
-</li>
-<li>
-<b>Address:</b>
-<span>BKIT Solutions, Hyderabad, Telangana, India</span>
-</li>
-</ul>
+<div style="margin-top: 25px;">
+<a href="mailto:hello@IHR.com" style="color: #fff; text-decoration: none; font-weight: 500; font-size: 1rem; transition: color 0.3s ease;" class="footer-mail"><i class="ri-mail-send-line" style="color: #E63946; margin-right: 8px;"></i> hello@IHR.com</a>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="copyright-area">
-<div class="row justify-content-center align-items-center g-4">
-<div class="col-lg-6 col-md-12">
-<p>
-                            © <span>IHR</span>. All rights reserved. Built by <b>BKIT Solutions</b>
+
+<!-- Copyright Area -->
+<!-- Copyright Area -->
+<div class="copyright-area pt-4" style="border-top: 1px solid rgba(255,255,255,0.05);">
+<div class="row align-items-center">
+<div class="col-lg-4 col-md-12 text-center text-lg-start mb-3 mb-lg-0">
+<p style="color: #94a3b8; font-size: 0.9rem; margin: 0;">
+© 2026 IHR. All rights reserved.
 </p>
 </div>
-<div class="col-lg-6 col-md-12">
-<ul class="info-links">
-<li>
-<a href="./privacy-policy.html">Privacy Policy</a>
-</li>
-<li>
-<a href="./terms-of-service.html">Terms Of Service</a>
-</li>
-</ul>
+<div class="col-lg-4 col-md-12 text-center mb-3 mb-lg-0">
+<p style="color: #94a3b8; font-size: 0.9rem; margin: 0;">
+Made with <span style="color: #e11d48;">♥</span> by BKIT Solutions, India
+</p>
+</div>
+<div class="col-lg-4 col-md-12 text-center text-lg-end">
+<a href="https://bkitsolutions.in" target="_blank" style="color: #94a3b8; font-size: 0.9rem; text-decoration: none; font-weight: 500; transition: color 0.3s ease;" class="footer-mail">
+bkitsolutions.in <i class="ri-arrow-right-up-line"></i>
+</a>
 </div>
 </div>
-</div>
-<div class="footer-large-logo-wrap" style="position: absolute; bottom: 0; left: 0; right: 0; width: 100%; overflow: hidden; display: flex; justify-content: center; pointer-events: none; z-index: 0;">
-<img alt="large-logo" src="../assets/images/black-logo.svg" style="width: 100%; min-width: 800px; max-width: 1200px; transform: translateY(40%); filter: brightness(0) invert(1) opacity(0.08);"/>
 </div>
 </div>
 </footer>
+<!-- End Footer Area -->
+<!-- Back to Top -->
+<button class="position-fixed text-center border-0 p-0" id="back-to-top" type="button">
+<i class="ri-arrow-up-s-line"></i>
+</button>
+<!-- End Back to Top -->
+<!-- Link of JS Files -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<script src="../assets/js/scrollCue.min.js"></script>
+<script src="../assets/js/simpleParallax.min.js"></script>
+<script src="../assets/js/fslightbox.min.js"></script>
+<script src="../assets/js/gsap.min.js"></script>
+<script src="../assets/js/ScrollTrigger.min.js"></script>
+<script src="../assets/js/SplitText.min.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
